@@ -23,9 +23,16 @@ This is a Tour de France prognosis competition website built with vanilla JavaSc
 
 **Scoring System**: Golf-style scoring where participants predict top 10 riders plus 5 substitutes. When main riders DNF, substitutes replace them. If no substitutes available, penalty is prediction_position + total_riders_in_course + 1.
 
-**Navigation**: URL fragment-based routing (`#scoring`, `#participants`, `#gc`) with browser history support.
+**Navigation**: URL fragment-based routing with deep linking support:
+- `#scoring` - Main scoring leaderboard
+- `#participants` - Participant overview with sortable tables
+- `#gc` - General Classification standings
+- `#scoring-detail-{id}` - Individual participant scoring breakdown
+- `#participant-detail-{id}` - Individual participant rider selections
 
 **Search**: Real-time filtering across all three main views (scoring, participants, GC standings).
+
+**Sortable Tables**: All main tables support sorting by multiple columns with visual indicators.
 
 ## Development Commands
 
@@ -72,10 +79,16 @@ All tables follow consistent styling with same headers, hover effects, and respo
 5. Lowest total points wins (golf scoring)
 
 ### Rider Replacement Logic
-- Substitutes used in order (positions 11-15 in prediction list)
-- Only non-DNF substitutes can replace DNF main riders
-- Substitutes get points based on their substitute position + actual finish
-- No replacement available = prediction_position + (total_riders_in_course + 1)
+- **DNS vs DNF distinction**: Riders who don't start (DNS) vs those who start but don't finish (DNF)
+- **Chain replacement**: If first substitute also DNFs, continue to next substitute
+- **Correct scoring**: Substitutes get points based on their SUBSTITUTE position + actual finish (e.g., substitute in position 12 who finishes 5th = 12 + 5 = 17 points)
+- **Penalty when no replacement**: prediction_position + (total_riders_in_course + 1)
+- **Important**: Use substitute's actual prediction position (11-15), not the position they're replacing
+
+### Recent Critical Fixes
+- **Fixed substitute scoring bug**: Was incorrectly using replaced rider's position instead of substitute's actual position
+- **Improved replacement chain**: Now properly skips DNF substitutes to find next available
+- **Added DNS handling**: Distinguishes between riders who never started vs those who abandoned
 
 ## File Structure Notes
 
