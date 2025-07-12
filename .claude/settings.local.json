@@ -6,7 +6,9 @@
       "Bash(npm run update-riders:*)",
       "Bash(npm run fix-typos:*)",
       "Bash(npm run fix-oconnor:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(node:*)",
+      "Bash(lsof:*)"
     ],
     "deny": []
   }

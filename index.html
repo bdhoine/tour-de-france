@@ -47,9 +47,9 @@
                         <table id="scoringTable">
                             <thead>
                                 <tr>
-                                    <th>Rank</th>
-                                    <th>Participant</th>
-                                    <th>Total Points</th>
+                                    <th class="sortable" data-sort="rank">Rank <span class="sort-indicator"></span></th>
+                                    <th class="sortable" data-sort="name">Participant <span class="sort-indicator"></span></th>
+                                    <th class="sortable" data-sort="points">Total Points <span class="sort-indicator"></span></th>
                                 </tr>
                             </thead>
                             <tbody id="scoringTableBody">
@@ -71,11 +71,13 @@
                 <table id="participantsTable">
                     <thead>
                         <tr>
-                            <th>Name</th>
+                            <th class="sortable" data-sort="position">Pos <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-sort="name">Name <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-sort="points">Points <span class="sort-indicator"></span></th>
                         </tr>
                     </thead>
                     <tbody id="tableBody">
-                        <tr><td>Loading...</td></tr>
+                        <tr><td colspan="3">Loading...</td></tr>
                     </tbody>
                 </table>
             </div>

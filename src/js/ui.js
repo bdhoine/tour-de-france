@@ -2,6 +2,8 @@
 export class UIManager {
     constructor(dataManager) {
         this.dataManager = dataManager;
+        this.currentParticipantSort = { field: 'name', direction: 'asc' };
+        this.currentScoringSort = { field: 'rank', direction: 'asc' };
         this.initializeElements();
         this.bindEvents();
     }
@@ -73,6 +75,9 @@ export class UIManager {
             this.handleHashChange();
         });
 
+        // Add sorting event listeners
+        this.bindSortingEvents();
+
         // Make functions globally available
         window.showDetailView = (id) => this.showDetailView(id);
         window.showMainView = () => this.showMainView();
@@ -84,14 +89,32 @@ export class UIManager {
         this.elements.tableBody.innerHTML = '';
 
         if (participants.length === 0) {
-            this.elements.tableBody.innerHTML = '<tr><td>No participants found</td></tr>';
+            this.elements.tableBody.innerHTML = '<tr><td colspan="3">No participants found</td></tr>';
             return;
         }
 
-        participants.forEach(participant => {
+        // Get scoring data to add position and points
+        const scoringResults = this.dataManager.getScoringResults();
+        
+        // Create enhanced participant data with scoring info
+        const enhancedParticipants = participants.map(participant => {
+            const scoreData = scoringResults.find(result => result.participant_id === participant.id);
+            return {
+                ...participant,
+                position: scoreData ? scoreData.rank : '-',
+                points: scoreData ? scoreData.total_points : '-'
+            };
+        });
+
+        // Sort the participants
+        const sortedParticipants = this.sortParticipants(enhancedParticipants);
+
+        sortedParticipants.forEach(participant => {
             const row = document.createElement('tr');
             row.innerHTML = `
-                <td>${participant.name}</td>
+                <td class="position">${participant.position}</td>
+                <td class="participant-name">${participant.name}</td>
+                <td class="total-points">${participant.points}</td>
             `;
             row.onclick = () => this.showDetailView(participant.id);
             this.elements.tableBody.appendChild(row);
@@ -152,25 +175,40 @@ export class UIManager {
     }
 
     showError(message) {
-        this.elements.tableBody.innerHTML = `<tr><td>Error: ${message}</td></tr>`;
+        this.elements.tableBody.innerHTML = `<tr><td colspan="3">Error: ${message}</td></tr>`;
     }
 
-    showParticipantsView() {
-        this.elements.scoringView.style.display = 'none';
-        this.elements.scoringDetailView.style.display = 'none';
-        this.elements.mainView.style.display = 'block';
-        this.elements.detailView.style.display = 'none';
-        this.elements.gcView.style.display = 'none';
-        
-        // Update navigation
-        this.elements.navScoring.classList.remove('active');
-        this.elements.navParticipants.classList.add('active');
-        this.elements.navGC.classList.remove('active');
-        
-        // Clear search and refresh
-        this.elements.searchInput.value = '';
-        this.displayParticipants(this.dataManager.getAllParticipants());
-        this.updateStats();
+    async showParticipantsView() {
+        try {
+            // Calculate scoring data if not already calculated
+            if (!this.dataManager.scoringData) {
+                // Ensure GC data is loaded for calculations
+                if (!this.dataManager.gcData) {
+                    await this.dataManager.loadGCData();
+                }
+                this.dataManager.calculateScoring();
+            }
+            
+            this.elements.scoringView.style.display = 'none';
+            this.elements.scoringDetailView.style.display = 'none';
+            this.elements.mainView.style.display = 'block';
+            this.elements.detailView.style.display = 'none';
+            this.elements.gcView.style.display = 'none';
+            
+            // Update navigation
+            this.elements.navScoring.classList.remove('active');
+            this.elements.navParticipants.classList.add('active');
+            this.elements.navGC.classList.remove('active');
+            
+            // Clear search and refresh
+            this.elements.searchInput.value = '';
+            this.displayParticipants(this.dataManager.getAllParticipants());
+            this.updateStats();
+            
+        } catch (error) {
+            console.error('Error showing participants view:', error);
+            this.elements.tableBody.innerHTML = '<tr><td colspan="3">Error loading participant data</td></tr>';
+        }
     }
 
     async showGCView() {
@@ -243,10 +281,6 @@ export class UIManager {
                     <strong>${rider.rider}</strong>
                     <span class="team">${rider.team}</span>
                 </div>
-                <div class="abandoned-details">
-                    <span class="stage">Stage ${rider.stage}</span>
-                    <span class="reason">${rider.reason}</span>
-                </div>
             `;
             this.elements.abandonedList.appendChild(div);
         });
@@ -294,7 +328,10 @@ export class UIManager {
             return;
         }
 
-        results.forEach(result => {
+        // Sort the results
+        const sortedResults = this.sortScoringResults([...results]);
+
+        sortedResults.forEach(result => {
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td class="rank">${result.rank}</td>
@@ -352,28 +389,30 @@ export class UIManager {
         scoreData.detailed_scores.forEach(score => {
             const row = document.createElement('tr');
             
-            // Handle DNF riders
-            if (score.dnf) {
-                const actualPos = 'DNF';
+            // Handle DNF and DNS riders
+            if (score.dnf || score.dns) {
+                const actualPos = score.dns ? 'DNS' : 'DNF';
                 
                 if (score.no_replacement) {
-                    // DNF with no replacement available - show penalty points
+                    // DNF/DNS with no replacement available - show penalty points
+                    const reasonText = score.dns ? 'No replacement available (DNS)' : 'No replacement available (DNF)';
                     row.innerHTML = `
                         <td class="predicted-pos">${score.prediction_pos}</td>
-                        <td class="rider-name">${score.rider}<div class="substitute-indicator">No replacement available</div></td>
+                        <td class="rider-name">${score.rider}<div class="substitute-indicator">${reasonText}</div></td>
                         <td class="actual-pos">${actualPos}</td>
                         <td class="points">${score.points}</td>
                     `;
-                    row.classList.add('dnf-rider', 'no-replacement');
+                    row.classList.add(score.dns ? 'dns-rider' : 'dnf-rider', 'no-replacement');
                 } else {
-                    // DNF with replacement - don't show points as they don't count
+                    // DNF/DNS with replacement - don't show points as they don't count
+                    const reasonText = score.dns ? 'Did not start - replaced by' : 'Replaced by';
                     row.innerHTML = `
                         <td class="predicted-pos">${score.prediction_pos}</td>
-                        <td class="rider-name">${score.rider}<div class="substitute-indicator">Replaced by ${score.replaced_by}</div></td>
+                        <td class="rider-name">${score.rider}<div class="substitute-indicator">${reasonText} ${score.replaced_by}</div></td>
                         <td class="actual-pos">${actualPos}</td>
                         <td class="points">—</td>
                     `;
-                    row.classList.add('dnf-rider');
+                    row.classList.add(score.dns ? 'dns-rider' : 'dnf-rider');
                 }
             }
             // Handle substitute riders
@@ -433,5 +472,133 @@ export class UIManager {
                 this.showScoringView();
                 break;
         }
+    }
+
+    bindSortingEvents() {
+        // Participant table sorting
+        const participantTable = document.getElementById('participantsTable');
+        if (participantTable) {
+            participantTable.addEventListener('click', (e) => {
+                if (e.target.classList.contains('sortable') || e.target.parentElement.classList.contains('sortable')) {
+                    const header = e.target.classList.contains('sortable') ? e.target : e.target.parentElement;
+                    const sortField = header.dataset.sort;
+                    this.sortParticipantTable(sortField);
+                }
+            });
+        }
+
+        // Scoring table sorting
+        const scoringTable = document.getElementById('scoringTable');
+        if (scoringTable) {
+            scoringTable.addEventListener('click', (e) => {
+                if (e.target.classList.contains('sortable') || e.target.parentElement.classList.contains('sortable')) {
+                    const header = e.target.classList.contains('sortable') ? e.target : e.target.parentElement;
+                    const sortField = header.dataset.sort;
+                    this.sortScoringTable(sortField);
+                }
+            });
+        }
+    }
+
+    sortParticipantTable(field) {
+        // Toggle direction if same field, otherwise default to asc
+        if (this.currentParticipantSort.field === field) {
+            this.currentParticipantSort.direction = this.currentParticipantSort.direction === 'asc' ? 'desc' : 'asc';
+        } else {
+            this.currentParticipantSort.field = field;
+            this.currentParticipantSort.direction = 'asc';
+        }
+
+        this.updateSortIndicators('participantsTable', field, this.currentParticipantSort.direction);
+        this.displayParticipants(this.dataManager.getAllParticipants());
+    }
+
+    sortScoringTable(field) {
+        // Toggle direction if same field, otherwise default to asc
+        if (this.currentScoringSort.field === field) {
+            this.currentScoringSort.direction = this.currentScoringSort.direction === 'asc' ? 'desc' : 'asc';
+        } else {
+            this.currentScoringSort.field = field;
+            this.currentScoringSort.direction = 'asc';
+        }
+
+        this.updateSortIndicators('scoringTable', field, this.currentScoringSort.direction);
+        this.displayScoringResults();
+    }
+
+    updateSortIndicators(tableId, activeField, direction) {
+        const table = document.getElementById(tableId);
+        const headers = table.querySelectorAll('.sortable');
+        
+        headers.forEach(header => {
+            const indicator = header.querySelector('.sort-indicator');
+            const field = header.dataset.sort;
+            
+            if (field === activeField) {
+                indicator.textContent = direction === 'asc' ? ' ↑' : ' ↓';
+                indicator.style.color = '#FFD100';
+            } else {
+                indicator.textContent = '';
+                indicator.style.color = '';
+            }
+        });
+    }
+
+    sortParticipants(participants) {
+        const { field, direction } = this.currentParticipantSort;
+        
+        return participants.sort((a, b) => {
+            let aVal, bVal;
+            
+            switch (field) {
+                case 'position':
+                    aVal = a.position === '-' ? 999 : parseInt(a.position);
+                    bVal = b.position === '-' ? 999 : parseInt(b.position);
+                    break;
+                case 'name':
+                    aVal = a.name.toLowerCase();
+                    bVal = b.name.toLowerCase();
+                    break;
+                case 'points':
+                    aVal = a.points === '-' ? 999999 : parseInt(a.points);
+                    bVal = b.points === '-' ? 999999 : parseInt(b.points);
+                    break;
+                default:
+                    return 0;
+            }
+            
+            if (aVal < bVal) return direction === 'asc' ? -1 : 1;
+            if (aVal > bVal) return direction === 'asc' ? 1 : -1;
+            return 0;
+        });
+    }
+
+    sortScoringResults(results) {
+        const { field, direction } = this.currentScoringSort;
+        
+        return results.sort((a, b) => {
+            let aVal, bVal;
+            
+            switch (field) {
+                case 'rank':
+                    aVal = a.rank;
+                    bVal = b.rank;
+                    break;
+                case 'name':
+                    aVal = a.participant_name.toLowerCase();
+                    bVal = b.participant_name.toLowerCase();
+                    break;
+                case 'points':
+                    aVal = a.total_points;
+                    bVal = b.total_points;
+                    break;
+                default:
+                    return 0;
+            }
+            
+            if (aVal < bVal) return direction === 'asc' ? -1 : 1;
+            if (aVal > bVal) return direction === 'asc' ? 1 : -1;
+            return 0;
+        });
     }
 }

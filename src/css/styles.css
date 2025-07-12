@@ -86,6 +86,28 @@ th {
     font-weight: bold;
     letter-spacing: 1px;
     border-bottom: 2px solid #FFD100;
+    text-align: left;
+}
+
+th.sortable {
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    position: relative;
+}
+
+th.sortable:hover {
+    background: #333333;
+}
+
+.sort-indicator {
+    color: #FFD100;
+    font-size: 12px;
+    margin-left: 6px;
+    display: inline-block;
+    min-width: 15px;
+    text-align: left;
 }
 
 td {
@@ -416,6 +438,7 @@ tr:hover td {
     font-weight: bold;
     letter-spacing: 1px;
     border-bottom: 2px solid #FFD100;
+    text-align: left;
 }
 
 /* GC table header alignment */
@@ -467,6 +490,7 @@ tr:hover td {
     color: #ffffff;
     font-size: 16px;
     min-width: 100px;
+    white-space: nowrap;
 }
 
 
@@ -499,6 +523,7 @@ tr:hover td {
     font-weight: bold;
     letter-spacing: 1px;
     border-bottom: 2px solid #FFD100;
+    text-align: left;
 }
 
 .scoring-table-section td {
@@ -633,6 +658,7 @@ tr:hover td {
     font-weight: bold;
     letter-spacing: 1px;
     border-bottom: 2px solid #FFD100;
+    text-align: left;
 }
 
 .detailed-scoring-table td {
@@ -694,6 +720,20 @@ tr:hover td {
 
 .dnf-rider .points {
     color: #ff6666 !important;
+}
+
+.dns-rider td {
+    background: #1a1a2a !important;
+    border-left: 4px solid #6666ff !important;
+    opacity: 0.7;
+}
+
+.dns-rider .actual-pos {
+    color: #8888ff !important;
+}
+
+.dns-rider .points {
+    color: #8888ff !important;
 }
 
 .substitute-rider td {
@@ -863,6 +903,12 @@ tr:hover td {
     th, td {
         padding: 15px 10px;
         font-size: 14px;
+    }
+    
+    .sort-indicator {
+        margin-left: 3px;
+        min-width: 12px;
+        font-size: 10px;
     }
     
     .riders-grid {
