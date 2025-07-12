@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(npm run fetch-gc:*)",
+      "Bash(npm run update-riders:*)",
+      "Bash(npm run fix-typos:*)",
+      "Bash(npm run fix-oconnor:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }

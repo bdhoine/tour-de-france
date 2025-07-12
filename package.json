@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "description": "A web application to display Tour de France rider prognosis data",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start": "npm run dev"
+    "start": "npm run dev",
+    "fetch-gc": "node scripts/fetch-gc-data.js",
+    "update-riders": "node scripts/update-rider-names.js",
+    "fix-typos": "node scripts/fix-typos.js",
+    "format-names": "node scripts/format-participant-names.js",
+    "fix-oconnor": "node scripts/fix-oconnor.js"
   },
   "keywords": [
     "tour-de-france",

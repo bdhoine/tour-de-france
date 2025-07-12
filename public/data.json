@@ -2,393 +2,1641 @@
   "data": [
     {
       "id": 1,
-      "name": "ADAMS SEPPE",
-      "riders": ["POGACAR", "VINGEGAARD", "ALMEIDA", "EVENEPOEL", "ROGLIC", "JORGENSON", "LIPOWITZ", "RODRIGUEZ", "BUITRAGO", "MAS", "GALL", "YATES ADAM", "JOHANNESSEN", "OCONNOR", "SKJELMOSE"]
+      "name": "Adams Seppe",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Matteo Jorgenson",
+        "Florian Lipowitz",
+        "Carlos Rodriguez",
+        "Santiago Buitrago",
+        "Enric Mas",
+        "Felix Gall",
+        "Adam Yates",
+        "Tobias Halland Johannessen",
+        "Ben O'Connor",
+        "Mattias Skjelmose"
+      ]
     },
     {
       "id": 2,
-      "name": "ADRIAENS DIRK",
-      "riders": ["POGACAR", "VINGEGAARD", "MAS", "ROGLIC", "ALMEIDA", "OCONNOR", "YATES ADAM", "RODRIGUEZ", "LIPOWITZ", "EVENEPOEL", "JORGENSON", "VLASOV", "YATES SIMON", "SKJELMOSE", "GALL"]
+      "name": "Adriaens Dirk",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Enric Mas",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Ben O'Connor",
+        "Adam Yates",
+        "Carlos Rodriguez",
+        "Florian Lipowitz",
+        "Remco Evenepoel",
+        "Matteo Jorgenson",
+        "Aleksandr Vlasov",
+        "Simon Yates",
+        "Mattias Skjelmose",
+        "Felix Gall"
+      ]
     },
     {
       "id": 3,
-      "name": "ADRIAENS GUY",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "YATES ADAM", "ROGLIC", "RODRIGUEZ", "YATES SIMON", "MAS", "OCONNOR", "JORGENSON", "LIPOWITZ", "MARTINEZ LENNY", "KUSS", "VLASOV", "ARENSMAN"]
+      "name": "Adriaens Guy",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Adam Yates",
+        "Primoz Roglic",
+        "Carlos Rodriguez",
+        "Simon Yates",
+        "Enric Mas",
+        "Ben O'Connor",
+        "Matteo Jorgenson",
+        "Florian Lipowitz",
+        "Lenny Martinez",
+        "Sepp Kuss",
+        "Aleksandr Vlasov",
+        "Thymen Arensman"
+      ]
     },
     {
       "id": 4,
-      "name": "AENSPECK TILLY",
-      "riders": ["POGACAR", "VINGEGAARD", "ROGLIC", "EVENEPOEL", "ALMEIDA", "YATES ADAM", "YATES SIMON", "RODRIQUEZ", "MAS", "JORGENSON", "KUSS", "LIPOWITZ", "OCONNOR", "SJKELMOSE", "GALL"]
+      "name": "Aenspeck Tilly",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Primoz Roglic",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Adam Yates",
+        "Simon Yates",
+        "Carlos Rodriguez",
+        "Enric Mas",
+        "Matteo Jorgenson",
+        "Sepp Kuss",
+        "Florian Lipowitz",
+        "Ben O'Connor",
+        "Mattias Skjelmose",
+        "Felix Gall"
+      ]
     },
     {
       "id": 5,
-      "name": "AERNAUT CARINE",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "YATES ADAM", "RODRIGUEZ", "JORGENSON", "VLASOV", "POWLESS", "KUSS", "BUITRAGO", "YATES SIMON", "PARETPEINTRE A", "SOLER", "MARTIN G"]
+      "name": "Aernaut Carine",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Adam Yates",
+        "Carlos Rodriguez",
+        "Matteo Jorgenson",
+        "Aleksandr Vlasov",
+        "Neilson Powless",
+        "Sepp Kuss",
+        "Santiago Buitrago",
+        "Simon Yates",
+        "Tadej Pogacar",
+        "Marc Soler",
+        "Guillaume Martin-Guyonnet"
+      ]
     },
     {
       "id": 6,
-      "name": "BORRE GUNTER",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "YATES ADAM", "RODRIGUEZ", "KUSS", "JORGENSON", "GALL", "VLASOV", "BUITRAGO", "YATES SIMON", "POWLESS", "PARETPEINTRE A", "MARTIN G"]
+      "name": "Borre Gunter",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Adam Yates",
+        "Carlos Rodriguez",
+        "Sepp Kuss",
+        "Matteo Jorgenson",
+        "Felix Gall",
+        "Aleksandr Vlasov",
+        "Santiago Buitrago",
+        "Simon Yates",
+        "Neilson Powless",
+        "Tadej Pogacar",
+        "Guillaume Martin-Guyonnet"
+      ]
     },
     {
       "id": 7,
-      "name": "BOUCHDIG SAID",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ROGLIC", "MAS", "OCONNOR", "GALL", "RODRIGUEZ", "SKJELMOSE", "MARTIN G", "JORGENSON", "ALMEIDA", "YATES ADAM", "LIPOWITZ", "YATES SIMON"]
+      "name": "Bouchdig Said",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Enric Mas",
+        "Ben O'Connor",
+        "Felix Gall",
+        "Carlos Rodriguez",
+        "Mattias Skjelmose",
+        "Guillaume Martin-Guyonnet",
+        "Matteo Jorgenson",
+        "Joao Almeida",
+        "Adam Yates",
+        "Florian Lipowitz",
+        "Simon Yates"
+      ]
     },
     {
       "id": 8,
-      "name": "CORTENS FIE",
-      "riders": ["POGACAR", "VINGEGAARD", "ALMEIDA", "EVENEPOEL", "MAS", "LIPOWITZ", "ROGLIC", "BUITRAGO", "CRAS", "ONLEY", "YATES ADAM", "GALL", "YATES SIMON", "JORGENSON", "RODRIGUEZ"]
+      "name": "Cortens Fie",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Remco Evenepoel",
+        "Enric Mas",
+        "Florian Lipowitz",
+        "Primoz Roglic",
+        "Santiago Buitrago",
+        "Steff Cras",
+        "Oscar Onley",
+        "Adam Yates",
+        "Felix Gall",
+        "Simon Yates",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez"
+      ]
     },
     {
       "id": 9,
-      "name": "CORTENS JENNE",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "JORGENSON", "ROGLIC", "RODRIGUEZ", "LIPOWITZ", "YATES ADAM", "OCONNOR", "MAS", "YATES SIMON", "BUITRAGO", "SKJELMOSE", "GALL"]
+      "name": "Cortens Jenne",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Primoz Roglic",
+        "Carlos Rodriguez",
+        "Florian Lipowitz",
+        "Adam Yates",
+        "Ben O'Connor",
+        "Enric Mas",
+        "Simon Yates",
+        "Santiago Buitrago",
+        "Mattias Skjelmose",
+        "Felix Gall"
+      ]
     },
     {
       "id": 10,
-      "name": "DE GEETER EWOUT",
-      "riders": ["POGACAR", "VINGEGAARD", "ALMEIDA", "EVENEPOEL", "LIPOWITZ", "JORGENSON", "RODRIGUEZ", "BUITRAGO", "MAS", "GALL", "OCONNOR", "JOHANNESSEN", "MARTIN G", "YATES ADAM", "KUSS"]
+      "name": "De Geeter Ewout",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Remco Evenepoel",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Santiago Buitrago",
+        "Enric Mas",
+        "Felix Gall",
+        "Ben O'Connor",
+        "Tobias Halland Johannessen",
+        "Guillaume Martin-Guyonnet",
+        "Adam Yates",
+        "Sepp Kuss"
+      ]
     },
     {
       "id": 11,
-      "name": "DE KOCK MARTHE",
-      "riders": ["POGACAR", "VINGEGAARD", "SKJELMOSE", "LIPOWITZ", "EVENEPOEL", "JORGENSON", "KUSS", "ROGLIC", "MAS", "ALMEIDA", "YATES SIMON", "YATES ADAM", "MARTINEZ LENNY", "RODRIGUEZ", "VLASOV"]
+      "name": "De Kock Marthe",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Mattias Skjelmose",
+        "Florian Lipowitz",
+        "Remco Evenepoel",
+        "Matteo Jorgenson",
+        "Sepp Kuss",
+        "Primoz Roglic",
+        "Enric Mas",
+        "Joao Almeida",
+        "Simon Yates",
+        "Adam Yates",
+        "Lenny Martinez",
+        "Carlos Rodriguez",
+        "Aleksandr Vlasov"
+      ]
     },
     {
       "id": 12,
-      "name": "DE MAN JURGEN",
-      "riders": ["POGACAR", "ROGLIC", "MAS", "VINGEGAARD", "ALMEIDA", "YATES ADAM", "JORGENSON", "EVENEPOEL", "RODRIGUEZ", "KUSS", "SKJELMOSE", "MARTINEZ LENNY", "YATES SIMON", "OCONNOR", "VLASOV"]
+      "name": "De Man Jurgen",
+      "riders": [
+        "Tadej Pogacar",
+        "Primoz Roglic",
+        "Enric Mas",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Adam Yates",
+        "Matteo Jorgenson",
+        "Remco Evenepoel",
+        "Carlos Rodriguez",
+        "Sepp Kuss",
+        "Mattias Skjelmose",
+        "Lenny Martinez",
+        "Simon Yates",
+        "Ben O'Connor",
+        "Aleksandr Vlasov"
+      ]
     },
     {
       "id": 13,
-      "name": "DEPRINS WARD",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "LIPOWITZ", "ROGLIC", "RODRIGUEZ", "MAS", "JORGENSON", "SKJELMOSE", "YATES SIMON", "ONLEY OSCAR", "MARTINEZ LENNY", "OCONNOR", "VAUQUELIN"]
+      "name": "Deprins Ward",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Florian Lipowitz",
+        "Primoz Roglic",
+        "Carlos Rodriguez",
+        "Enric Mas",
+        "Matteo Jorgenson",
+        "Mattias Skjelmose",
+        "Simon Yates",
+        "Oscar Onley",
+        "Lenny Martinez",
+        "Ben O'Connor",
+        "Kévin Vauquelin"
+      ]
     },
     {
       "id": 14,
-      "name": "DE RON DRIES",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "LIPOWITZ", "JORGENSON", "GALL", "MAS", "RODRIGUEZ", "SKJELMOSE", "ROGLIC", "JOHANNESSEN", "BUITRAGO", "MARTIN G", "OCONNOR"]
+      "name": "De Ron Dries",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Felix Gall",
+        "Enric Mas",
+        "Carlos Rodriguez",
+        "Mattias Skjelmose",
+        "Primoz Roglic",
+        "Tobias Halland Johannessen",
+        "Santiago Buitrago",
+        "Guillaume Martin-Guyonnet",
+        "Ben O'Connor"
+      ]
     },
     {
       "id": 15,
-      "name": "DE RON THOMAS",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "LIPOWITZ", "JORGENSON", "GALL", "MAS", "RODRIGUEZ", "SKJELMOSE", "ROGLIC", "JOHANNESSEN", "BUITRAGO", "MARTIN G", "OCONNOR"]
+      "name": "De Ron Thomas",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Felix Gall",
+        "Enric Mas",
+        "Carlos Rodriguez",
+        "Mattias Skjelmose",
+        "Primoz Roglic",
+        "Tobias Halland Johannessen",
+        "Santiago Buitrago",
+        "Guillaume Martin-Guyonnet",
+        "Ben O'Connor"
+      ]
     },
     {
       "id": 16,
-      "name": "DE VEUSTER WIM",
-      "riders": ["POGACAR", "VINGEGAARD", "ROGLIC", "EVENEPOEL", "ALMEIDA", "RODRIGUEZ", "JORGENSON", "GALL", "JOHANNESSEN", "BUITRAGO", "MARTIN G", "LIPOWITZ", "SKJELMOSE", "OCONNOR", "ONLEY"]
+      "name": "De Veuster Wim",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Primoz Roglic",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Carlos Rodriguez",
+        "Matteo Jorgenson",
+        "Felix Gall",
+        "Tobias Halland Johannessen",
+        "Santiago Buitrago",
+        "Guillaume Martin-Guyonnet",
+        "Florian Lipowitz",
+        "Mattias Skjelmose",
+        "Ben O'Connor",
+        "Oscar Onley"
+      ]
     },
     {
       "id": 17,
-      "name": "DE WEERDT JERRY",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "MAS", "RODRIGUEZ", "POWLESS", "BUITRAGO", "SKJELMOSE", "KUSS", "YATES ADAM", "NARVAEZ", "ONLEY", "ROGLIC", "CRAS", "JOHANNESSEN"]
+      "name": "De Weerdt Jerry",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Enric Mas",
+        "Carlos Rodriguez",
+        "Neilson Powless",
+        "Santiago Buitrago",
+        "Mattias Skjelmose",
+        "Sepp Kuss",
+        "Adam Yates",
+        "Jhonatan Narvaez",
+        "Oscar Onley",
+        "Primoz Roglic",
+        "Steff Cras",
+        "Tobias Halland Johannessen"
+      ]
     },
     {
       "id": 18,
-      "name": "DE WIT PATRICK",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ROGLIC", "ALMEIDA", "JORGENSON", "RODRIGUEZ", "LIPOWITZ", "SJKELMOSE", "KUSS", "MAS", "OCONNOR", "GALL", "YATES SIMON", "ONLEY"]
+      "name": "De Wit Patrick",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Florian Lipowitz",
+        "Mattias Skjelmose",
+        "Sepp Kuss",
+        "Enric Mas",
+        "Ben O'Connor",
+        "Felix Gall",
+        "Simon Yates",
+        "Oscar Onley"
+      ]
     },
     {
       "id": 19,
-      "name": "D'HOINE BARRY",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ROGLIC", "ALMEIDA", "OCONNOR", "MAS", "RODRIGUEZ", "JORGENSON", "GALL", "YATES ADAM", "YATES SIMON", "BUITRAGO", "JOHANNESSEN", "MARTIN G"]
+      "name": "D'hoine Barry",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Ben O'Connor",
+        "Enric Mas",
+        "Carlos Rodriguez",
+        "Matteo Jorgenson",
+        "Felix Gall",
+        "Adam Yates",
+        "Simon Yates",
+        "Santiago Buitrago",
+        "Tobias Halland Johannessen",
+        "Guillaume Martin-Guyonnet"
+      ]
     },
     {
       "id": 20,
-      "name": "DOMS JAN",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "RODRIGUEZ", "JORGENSON", "ROGLIC", "LIPOWITZ", "OCONNOR", "BUITRAGO", "SKJELMOSE", "YATES SIMON", "MARTINEZ LENNY", "GALL", "SIVAKOV"]
+      "name": "Doms Jan",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Carlos Rodriguez",
+        "Matteo Jorgenson",
+        "Primoz Roglic",
+        "Florian Lipowitz",
+        "Ben O'Connor",
+        "Santiago Buitrago",
+        "Mattias Skjelmose",
+        "Simon Yates",
+        "Lenny Martinez",
+        "Felix Gall",
+        "Pavel Sivakov"
+      ]
     },
     {
       "id": 21,
-      "name": "GEUENS STEFAN",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "JORGENSON", "ROGLIC", "RODRIGUEZ", "LIPOWITZ", "GALL", "BUITRAGO", "SJKELMOSE", "MAS", "YATES ADAM", "OCONNOR", "YATES SIMON"]
+      "name": "Geuens Stefan",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Primoz Roglic",
+        "Carlos Rodriguez",
+        "Florian Lipowitz",
+        "Felix Gall",
+        "Santiago Buitrago",
+        "Mattias Skjelmose",
+        "Enric Mas",
+        "Adam Yates",
+        "Ben O'Connor",
+        "Simon Yates"
+      ]
     },
     {
       "id": 22,
-      "name": "GOELEN GUIDO",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "YATES ADAM", "LIPOWITZ", "ALMEIDA", "GALL", "JORGENSON", "RODRIGUEZ", "JOHANNESSEN", "YATES SIMON", "MARTINEZ LENNY", "MAS", "BUITRAGO", "SJKELMOSE"]
+      "name": "Goelen Guido",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Adam Yates",
+        "Florian Lipowitz",
+        "Joao Almeida",
+        "Felix Gall",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Tobias Halland Johannessen",
+        "Simon Yates",
+        "Lenny Martinez",
+        "Enric Mas",
+        "Santiago Buitrago",
+        "Mattias Skjelmose"
+      ]
     },
     {
       "id": 23,
-      "name": "GOELEN RUBEN",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "ROGLIC", "RODRIGUEZ", "LIPOWITZ", "JORGENSON", "YATES SIMON", "OCONNOR", "GALL", "MARTINEZ LENNY", "SJKELMOSE", "MAS", "KUSS"]
+      "name": "Goelen Ruben",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Primoz Roglic",
+        "Carlos Rodriguez",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Simon Yates",
+        "Ben O'Connor",
+        "Felix Gall",
+        "Lenny Martinez",
+        "Mattias Skjelmose",
+        "Enric Mas",
+        "Sepp Kuss"
+      ]
     },
     {
       "id": 24,
-      "name": "GRAUS LIZA",
-      "riders": ["POGACAR", "VINGEGAARD", "ROGLIC", "CARAPAZ", "YATES ADAM", "JORGENSON", "ALMEIDA", "RODRIGUEZ", "EVENEPOEL", "MAS", "YATES SIMON", "GALL", "OCONNOR", "BUITRAGO", "JOHANNESSEN"]
+      "name": "Graus Liza",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Primoz Roglic",
+        "Richard Carapaz",
+        "Adam Yates",
+        "Matteo Jorgenson",
+        "Joao Almeida",
+        "Carlos Rodriguez",
+        "Remco Evenepoel",
+        "Enric Mas",
+        "Simon Yates",
+        "Felix Gall",
+        "Ben O'Connor",
+        "Santiago Buitrago",
+        "Tobias Halland Johannessen"
+      ]
     },
     {
       "id": 25,
-      "name": "HERMANS WOUTER",
-      "riders": ["YATES SIMON", "ALMEIDA", "RODRIGUEZ", "JORGENSON", "SKJELMOSE", "MAS", "ROGLIC", "EVENEPOEL", "VINGEGAARD", "POGACAR", "YATES ADAM", "GALL", "LIPOWITZ", "BUITRAGO", "OCONNOR"]
+      "name": "Hermans Wouter",
+      "riders": [
+        "Simon Yates",
+        "Joao Almeida",
+        "Carlos Rodriguez",
+        "Matteo Jorgenson",
+        "Mattias Skjelmose",
+        "Enric Mas",
+        "Primoz Roglic",
+        "Remco Evenepoel",
+        "Jonas Vingegaard",
+        "Tadej Pogacar",
+        "Adam Yates",
+        "Felix Gall",
+        "Florian Lipowitz",
+        "Santiago Buitrago",
+        "Ben O'Connor"
+      ]
     },
     {
       "id": 26,
-      "name": "JANSSENS SIEN",
-      "riders": ["POGACAR", "VINGEGAARD", "ALMEIDA", "EVENEPOEL", "JORGENSON", "LIPOWITZ", "BUITRAGO", "RODRIGUEZ", "ROGLIC", "YATES SIMON", "MAS", "JOHANNESSEN", "GALL", "SKJELMOSE", "YATES ADAM"]
+      "name": "Janssens Sien",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Remco Evenepoel",
+        "Matteo Jorgenson",
+        "Florian Lipowitz",
+        "Santiago Buitrago",
+        "Carlos Rodriguez",
+        "Primoz Roglic",
+        "Simon Yates",
+        "Enric Mas",
+        "Tobias Halland Johannessen",
+        "Felix Gall",
+        "Mattias Skjelmose",
+        "Adam Yates"
+      ]
     },
     {
       "id": 27,
-      "name": "JULIENS JEAN",
-      "riders": ["VINGEGAARD", "POGACAR", "YATES SIMON", "MERLIER", "KUSS", "EVENEPOEL", "RODRIGUEZ", "JORGENSEN", "YATES ADAM", "ALMEIDA", "VANAERT", "PHILIPSEN", "MILAN", "BRAET VITO", "BENOOT"]
+      "name": "Juliens Jean",
+      "riders": [
+        "Jonas Vingegaard",
+        "Tadej Pogacar",
+        "Simon Yates",
+        "Tim Merlier",
+        "Sepp Kuss",
+        "Remco Evenepoel",
+        "Carlos Rodriguez",
+        "Matteo Jorgenson",
+        "Adam Yates",
+        "Joao Almeida",
+        "Mathieu van der Poel",
+        "Phil Bauhaus",
+        "Ilan Van Wilder",
+        "Vito Braet",
+        "Ben Healy"
+      ]
     },
     {
       "id": 28,
-      "name": "KEPPENS DIRK",
-      "riders": ["POGACAR", "VINGEGAARD", "ROGLIC", "ALMEIDA", "EVENEPOEL", "YATES ADAM", "MAS", "YATES SIMON", "JORGENSON", "RODRIGUEZ", "OCONNOR", "LIPOWITZ", "KUSS", "SKJELMOSE", "MARTIN G"]
+      "name": "Keppens Dirk",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Remco Evenepoel",
+        "Adam Yates",
+        "Enric Mas",
+        "Simon Yates",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Ben O'Connor",
+        "Florian Lipowitz",
+        "Sepp Kuss",
+        "Mattias Skjelmose",
+        "Guillaume Martin-Guyonnet"
+      ]
     },
     {
       "id": 29,
-      "name": "LIEKENS MARIA",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ROGLIC", "ALMEIDA", "RODRIGUEZ", "SJKELMOSE", "JORGENSON", "MAS", "MARTIN G", "OCONNOR", "LIPOWITZ", "ONLEY", "GALL", "YATES ADAM"]
+      "name": "Liekens Maria",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Carlos Rodriguez",
+        "Mattias Skjelmose",
+        "Matteo Jorgenson",
+        "Enric Mas",
+        "Guillaume Martin-Guyonnet",
+        "Ben O'Connor",
+        "Florian Lipowitz",
+        "Oscar Onley",
+        "Felix Gall",
+        "Adam Yates"
+      ]
     },
     {
       "id": 30,
-      "name": "MATON EVA",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "YATES SIMON", "ROGLIC", "MAS", "YATES ADAM", "JORGENSON", "GALL", "BUITRAGO", "SJKELMOSE", "MARTINEZ LENNY", "RODRIGUEZ", "KUSS", "LIPOWITZ"]
+      "name": "Maton Eva",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Simon Yates",
+        "Primoz Roglic",
+        "Enric Mas",
+        "Adam Yates",
+        "Matteo Jorgenson",
+        "Felix Gall",
+        "Santiago Buitrago",
+        "Mattias Skjelmose",
+        "Lenny Martinez",
+        "Carlos Rodriguez",
+        "Sepp Kuss",
+        "Florian Lipowitz"
+      ]
     },
     {
       "id": 31,
-      "name": "MICHIELSEN GERT",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "ROGLIC", "JORGENSON", "RODRIGUEZ", "LIPOWITZ", "YATES ADAM", "OCONNOR", "MAS", "BUITRAGO", "MARTINEZ LENNY", "MARTIN G", "GALL"]
+      "name": "Michielsen Gert",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Primoz Roglic",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Florian Lipowitz",
+        "Adam Yates",
+        "Ben O'Connor",
+        "Enric Mas",
+        "Santiago Buitrago",
+        "Lenny Martinez",
+        "Guillaume Martin-Guyonnet",
+        "Felix Gall"
+      ]
     },
     {
       "id": 32,
-      "name": "MICHIELSEN JOZEF",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "ONLEY", "LIPOWITZ", "ROGLIC", "MAS", "RODRIGUEZ", "OCONNOR", "GALL", "MARTIN G", "YATES ADAM", "JORGENSON", "SKJELMOSE"]
+      "name": "Michielsen Jozef",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Oscar Onley",
+        "Florian Lipowitz",
+        "Primoz Roglic",
+        "Enric Mas",
+        "Carlos Rodriguez",
+        "Ben O'Connor",
+        "Felix Gall",
+        "Guillaume Martin-Guyonnet",
+        "Adam Yates",
+        "Matteo Jorgenson",
+        "Mattias Skjelmose"
+      ]
     },
     {
       "id": 33,
-      "name": "MOSTINCKX DAVID",
-      "riders": ["POGACAR", "VINGEGAARD", "RODRIGUEZ", "ROGLIC", "EVENEPOEL", "ALMEIDA", "MARTINEZ LENNY", "MAS", "JORGENSON", "LIPOWITZ", "SJKELMOSE", "YATES SIMON", "OCONNOR", "ONLEY", "JOHANNESSEN"]
+      "name": "Mostinckx David",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Carlos Rodriguez",
+        "Primoz Roglic",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Lenny Martinez",
+        "Enric Mas",
+        "Matteo Jorgenson",
+        "Florian Lipowitz",
+        "Mattias Skjelmose",
+        "Simon Yates",
+        "Ben O'Connor",
+        "Oscar Onley",
+        "Tobias Halland Johannessen"
+      ]
     },
     {
       "id": 34,
-      "name": "MOSTINCKX MATHIAS",
-      "riders": ["VINGEGAARD", "POGACAR", "ALMEIDA", "EVENEPOEL", "ROGLIC", "LIPOWITZ", "RODRIGUEZ", "BUITRAGO", "GALL", "JORGENSON", "MAS", "YATES ADAM", "OCONNOR", "MARTIN G", "JOHANNESSEN"]
+      "name": "Mostinckx Mathias",
+      "riders": [
+        "Jonas Vingegaard",
+        "Tadej Pogacar",
+        "Joao Almeida",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Florian Lipowitz",
+        "Carlos Rodriguez",
+        "Santiago Buitrago",
+        "Felix Gall",
+        "Matteo Jorgenson",
+        "Enric Mas",
+        "Adam Yates",
+        "Ben O'Connor",
+        "Guillaume Martin-Guyonnet",
+        "Tobias Halland Johannessen"
+      ]
     },
     {
       "id": 35,
-      "name": "MOSTINCKX PATRICK",
-      "riders": ["POGACAR", "VINGEGAARD", "ROGLIC", "ALMEIDA", "LIPOWITZ", "EVENEPOEL", "JORGENSON", "MAS", "RODRIGUEZ", "YATES SIMON", "YATES ADAM", "SKJELMOSE", "MARTIN G", "GALL", "BUITRAGO"]
+      "name": "Mostinckx Patrick",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Florian Lipowitz",
+        "Remco Evenepoel",
+        "Matteo Jorgenson",
+        "Enric Mas",
+        "Carlos Rodriguez",
+        "Simon Yates",
+        "Adam Yates",
+        "Mattias Skjelmose",
+        "Guillaume Martin-Guyonnet",
+        "Felix Gall",
+        "Santiago Buitrago"
+      ]
     },
     {
       "id": 36,
-      "name": "MOSTINCKX RONNY",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "LIPOWITZ", "RODRIGUEZ", "ALMEIDA", "BUITRAGO", "VLASOV", "MAS", "YATES ADAM", "JORGENSON", "ROGLIC", "POWLESS", "GREGOIRE", "MARTIN G"]
+      "name": "Mostinckx Ronny",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Florian Lipowitz",
+        "Carlos Rodriguez",
+        "Joao Almeida",
+        "Santiago Buitrago",
+        "Aleksandr Vlasov",
+        "Enric Mas",
+        "Adam Yates",
+        "Matteo Jorgenson",
+        "Primoz Roglic",
+        "Neilson Powless",
+        "Romain Grégoire",
+        "Guillaume Martin-Guyonnet"
+      ]
     },
     {
       "id": 37,
-      "name": "MOYSON HELENA 1",
-      "riders": ["POGACAR", "EVENEPOEL", "ROGLIC", "VINGEGAARD", "YATES ADAM", "JORGENSON", "ALMEIDA", "LIPOWITZ", "KUSS", "MAS", "OCONNOR", "MARTINEZ LENNY", "SJKELMOSE", "VLASOV", "ALMEIDA"]
+      "name": "Moyson Helena 1",
+      "riders": [
+        "Tadej Pogacar",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Jonas Vingegaard",
+        "Adam Yates",
+        "Matteo Jorgenson",
+        "Joao Almeida",
+        "Florian Lipowitz",
+        "Sepp Kuss",
+        "Enric Mas",
+        "Ben O'Connor",
+        "Lenny Martinez",
+        "Mattias Skjelmose",
+        "Aleksandr Vlasov",
+        "Joao Almeida"
+      ]
     },
     {
       "id": 38,
-      "name": "MOYSON HELENA 2",
-      "riders": ["EVENEPOEL", "VINNEGAARD", "POGACAR", "VANAERT", "YATES ADAM", "ROGLIC", "BENOOT", "RODRIGUEZ", "MAS", "ALMEIDA", "YATES SIMON", "NYS THIBAU", "OCONNOR", "JORGENSON", "VLASOV"]
+      "name": "Moyson Helena 2",
+      "riders": [
+        "Remco Evenepoel",
+        "Jonas Vingegaard",
+        "Tadej Pogacar",
+        "Mathieu van der Poel",
+        "Adam Yates",
+        "Primoz Roglic",
+        "Ben Healy",
+        "Carlos Rodriguez",
+        "Enric Mas",
+        "Joao Almeida",
+        "Simon Yates",
+        "Thibau Nys",
+        "Ben O'Connor",
+        "Matteo Jorgenson",
+        "Aleksandr Vlasov"
+      ]
     },
     {
       "id": 39,
-      "name": "PEETERS ERIK",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "ROGLIC", "LIPOWITZ", "JORGENSON", "RODRIGUEZ", "SJKELMOSE", "MAS", "GALL", "OCONNOR", "YATES SIMON", "BUITRAGO", "KUSS"]
+      "name": "Peeters Erik",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Primoz Roglic",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Mattias Skjelmose",
+        "Enric Mas",
+        "Felix Gall",
+        "Ben O'Connor",
+        "Simon Yates",
+        "Santiago Buitrago",
+        "Sepp Kuss"
+      ]
     },
     {
       "id": 40,
-      "name": "PEETERS WARD",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "JORGENSON", "ALMEIDA", "LIPOWITZ", "BUITRAGO", "ROGLIC", "SKJELMOSE", "MAS", "JOHANNESSEN", "RODRIGUEZ", "GALL", "MARTIN G", "VAUQUELIN"]
+      "name": "Peeters Ward",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Matteo Jorgenson",
+        "Joao Almeida",
+        "Florian Lipowitz",
+        "Santiago Buitrago",
+        "Primoz Roglic",
+        "Mattias Skjelmose",
+        "Enric Mas",
+        "Tobias Halland Johannessen",
+        "Carlos Rodriguez",
+        "Felix Gall",
+        "Guillaume Martin-Guyonnet",
+        "Kévin Vauquelin"
+      ]
     },
     {
       "id": 41,
-      "name": "PUT FONS",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ROGLIC", "ALMEIDA", "JORGENSON", "RODRIGUEZ", "LIPOWITZ", "YATES ADAM", "MAS", "SJKELMOSE", "YATES SIMON", "KUSS", "GALL", "MARTINEZ LENNY"]
+      "name": "Put Fons",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Florian Lipowitz",
+        "Adam Yates",
+        "Enric Mas",
+        "Mattias Skjelmose",
+        "Simon Yates",
+        "Sepp Kuss",
+        "Felix Gall",
+        "Lenny Martinez"
+      ]
     },
     {
       "id": 42,
-      "name": "SCHEERS JEAN",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "RODRIGUEZ", "ROGLIC", "OCONNOR", "MAS", "ALMEIDA", "GALL", "MARTIN G", "SKJELMOSE", "JORGENSON", "LUTSENKO", "BUCHMANN", "VLASOV"]
+      "name": "Scheers Jean",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Carlos Rodriguez",
+        "Primoz Roglic",
+        "Ben O'Connor",
+        "Enric Mas",
+        "Joao Almeida",
+        "Felix Gall",
+        "Guillaume Martin-Guyonnet",
+        "Mattias Skjelmose",
+        "Matteo Jorgenson",
+        "Alexey Lutsenko",
+        "Emanuel Buchmann",
+        "Aleksandr Vlasov"
+      ]
     },
     {
       "id": 43,
-      "name": "TEUGHELS ERIC",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "LIPOWITZ", "ALMEIDA", "JORGENSON", "RODRIGUEZ", "MAS", "SJKELMOSE", "BUITRAGO", "OCONNOR", "MARTINEZ LENNY", "YATES SIMON", "GALL", "JOHANNESSEN"]
+      "name": "Teughels Eric",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Florian Lipowitz",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Enric Mas",
+        "Mattias Skjelmose",
+        "Santiago Buitrago",
+        "Ben O'Connor",
+        "Lenny Martinez",
+        "Simon Yates",
+        "Felix Gall",
+        "Tobias Halland Johannessen"
+      ]
     },
     {
       "id": 44,
-      "name": "TUYAERTS MARC",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "RODRIGUEZ", "JORGENSON", "ROGLIC", "MAS", "GALL", "BUITRAGO", "BUCHMANN", "LIPOWITZ", "SKJELMOSE", "MARTIN G", "VLASOV"]
+      "name": "Tuyaerts Marc",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Carlos Rodriguez",
+        "Matteo Jorgenson",
+        "Primoz Roglic",
+        "Enric Mas",
+        "Felix Gall",
+        "Santiago Buitrago",
+        "Emanuel Buchmann",
+        "Florian Lipowitz",
+        "Mattias Skjelmose",
+        "Guillaume Martin-Guyonnet",
+        "Aleksandr Vlasov"
+      ]
     },
     {
       "id": 45,
-      "name": "VAEL THOMAS",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "LIPOWITZ", "ALMEIDA", "JORGENSON", "MAS", "SKJELMOSE", "RODRIGUEZ", "YATES SIMON", "OCONNOR", "BUITRAGO", "ONLEY", "MARTINEZ LENNY", "VANEETVELT"]
+      "name": "Vael Thomas",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Florian Lipowitz",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Enric Mas",
+        "Mattias Skjelmose",
+        "Carlos Rodriguez",
+        "Simon Yates",
+        "Ben O'Connor",
+        "Santiago Buitrago",
+        "Oscar Onley",
+        "Lenny Martinez",
+        "Mathieu van der Poel"
+      ]
     },
     {
       "id": 46,
-      "name": "VAN BIESEN LUK",
-      "riders": ["POGACAR", "EVENEPOEL", "JORGENSON", "VINGEGAARD", "ALMEIDA", "GALL", "RODRIGUEZ", "ONLEY", "MARTINEZ LENNY", "LIPOWITZ", "ROGLIC", "MAS", "STORER", "CRAS", "JOHANNESSEN"]
+      "name": "Van Biesen Luk",
+      "riders": [
+        "Tadej Pogacar",
+        "Remco Evenepoel",
+        "Matteo Jorgenson",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Felix Gall",
+        "Carlos Rodriguez",
+        "Oscar Onley",
+        "Lenny Martinez",
+        "Florian Lipowitz",
+        "Primoz Roglic",
+        "Enric Mas",
+        "Michael Storer",
+        "Steff Cras",
+        "Tobias Halland Johannessen"
+      ]
     },
     {
       "id": 47,
-      "name": "VANDENDAEL SVEN",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "JORGENSON", "MAS", "ROGLIC", "RODRIGUEZ", "ALMEIDA", "BUITRAGO", "YATES SIMON", "YATES ADAM", "MARTIN G", "DEPLUS", "CICCONE", "HEALY"]
+      "name": "Vandendael Sven",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Matteo Jorgenson",
+        "Enric Mas",
+        "Primoz Roglic",
+        "Carlos Rodriguez",
+        "Joao Almeida",
+        "Santiago Buitrago",
+        "Simon Yates",
+        "Adam Yates",
+        "Guillaume Martin-Guyonnet",
+        "Arnaud De Lie",
+        "Giulio Ciccone",
+        "Ben Healy"
+      ]
     },
     {
       "id": 48,
-      "name": "VANDERSTEEN DANNY",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "ROGLIC", "JORGENSON", "RODRIGUEZ", "MAS", "SKJELMOSE", "BUITRAGO", "YATES ADAM", "ONLEY", "GALL", "OCONNOR", "YATES SIMON"]
+      "name": "Vandersteen Danny",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Primoz Roglic",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Enric Mas",
+        "Mattias Skjelmose",
+        "Santiago Buitrago",
+        "Adam Yates",
+        "Oscar Onley",
+        "Felix Gall",
+        "Ben O'Connor",
+        "Simon Yates"
+      ]
     },
     {
       "id": 49,
-      "name": "VANDERSTEEN MARC",
-      "riders": ["POGACAR", "VINGEGAARD", "ALMEIDA", "ROGLIC", "YATES ADAM", "EVENEPOEL", "JORGENSON", "RODRIGUEZ", "YATES SIMON", "LIPOWITZ", "BUITRAGO", "GALL", "MARTIN G", "MAS", "OCONNOR"]
+      "name": "Vandersteen Marc",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Primoz Roglic",
+        "Adam Yates",
+        "Remco Evenepoel",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Simon Yates",
+        "Florian Lipowitz",
+        "Santiago Buitrago",
+        "Felix Gall",
+        "Guillaume Martin-Guyonnet",
+        "Enric Mas",
+        "Ben O'Connor"
+      ]
     },
     {
       "id": 50,
-      "name": "VANDERVELDE FIL",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "KUSS", "YATES SIMON", "ROGLIC", "MAS", "SJKELMOSE", "LIPOWITZ", "YATES ADAM", "RODRIGUEZ", "JORGENSON", "VLASOV", "MARINEZ LENNY"]
+      "name": "Vandervelde Fil",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Sepp Kuss",
+        "Simon Yates",
+        "Primoz Roglic",
+        "Enric Mas",
+        "Mattias Skjelmose",
+        "Florian Lipowitz",
+        "Adam Yates",
+        "Carlos Rodriguez",
+        "Matteo Jorgenson",
+        "Aleksandr Vlasov",
+        "Lenny Martinez"
+      ]
     },
     {
       "id": 51,
-      "name": "VANDERVELDE LENNE",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "RODRIGUEZ", "ALMEIDA", "ROGLIC", "OCONNOR", "MAS", "BUCHMANN", "BUITRAGO", "MARTIN G", "GALL", "SKJELMOSE", "POWLESS", "ARENSMAN"]
+      "name": "Vandervelde Lenne",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Carlos Rodriguez",
+        "Joao Almeida",
+        "Primoz Roglic",
+        "Ben O'Connor",
+        "Enric Mas",
+        "Emanuel Buchmann",
+        "Santiago Buitrago",
+        "Guillaume Martin-Guyonnet",
+        "Felix Gall",
+        "Mattias Skjelmose",
+        "Neilson Powless",
+        "Thymen Arensman"
+      ]
     },
     {
       "id": 52,
-      "name": "VAN DYCK BRIGITTE",
-      "riders": ["POGACAR", "VINGEGAARD", "ROGLIC", "ALMEIDA", "LIPOWITZ", "JORGENSON", "EVENEPOEL", "MAS", "RODRIGUEZ", "YATES ADAM", "YATES SIMON", "MARTIN G", "ONLEY", "MARTINEZ LENNY", "VAUQUELIN"]
+      "name": "Van Dyck Brigitte",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Remco Evenepoel",
+        "Enric Mas",
+        "Carlos Rodriguez",
+        "Adam Yates",
+        "Simon Yates",
+        "Guillaume Martin-Guyonnet",
+        "Oscar Onley",
+        "Lenny Martinez",
+        "Kévin Vauquelin"
+      ]
     },
     {
       "id": 53,
-      "name": "VAN GOETHEM JAN",
-      "riders": ["POGACAR", "VINGEGAARD", "JORGENSON", "EVENEPOEL", "YATES SIMON", "ROGLIC", "ALMEIDA", "KUSS", "YATES ADAM", "OCONNOR", "GALL", "NYS THIBAU", "MAS", "WOODS", "BUITRAGO"]
+      "name": "Van Goethem Jan",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Matteo Jorgenson",
+        "Remco Evenepoel",
+        "Simon Yates",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Sepp Kuss",
+        "Adam Yates",
+        "Ben O'Connor",
+        "Felix Gall",
+        "Thibau Nys",
+        "Enric Mas",
+        "Michael Woods",
+        "Santiago Buitrago"
+      ]
     },
     {
       "id": 54,
-      "name": "VAN GRUNDERBEEK GEERT",
-      "riders": ["POGACAR", "EVENEPOEL", "VINGEGAARD", "ROGLIC", "ONLEY", "GALL", "LIPOWITZ", "JORGENSON", "ALMEIDA", "RODRIGUEZ", "YATES SIMON", "YATES ADAM", "MAS", "SEIXAS", "VAUQUELIN"]
+      "name": "Van Grunderbeek Geert",
+      "riders": [
+        "Tadej Pogacar",
+        "Remco Evenepoel",
+        "Jonas Vingegaard",
+        "Primoz Roglic",
+        "Oscar Onley",
+        "Felix Gall",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Joao Almeida",
+        "Carlos Rodriguez",
+        "Simon Yates",
+        "Adam Yates",
+        "Enric Mas",
+        "SEIXAS",
+        "Kévin Vauquelin"
+      ]
     },
     {
       "id": 55,
-      "name": "VAN GRUNDERBEEK PIET",
-      "riders": ["POGACAR", "EVENEPOEL", "VINGEGAARD", "ALMEIDA", "JORGENSON", "ROGLIC", "LIPOWITZ", "RODRIGUEZ", "MAS", "GALL", "OCONNOR", "MARTINEZ LENNY", "JOHANNESSEN", "BUITRAGO", "ONLEY"]
+      "name": "Van Grunderbeek Piet",
+      "riders": [
+        "Tadej Pogacar",
+        "Remco Evenepoel",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Primoz Roglic",
+        "Florian Lipowitz",
+        "Carlos Rodriguez",
+        "Enric Mas",
+        "Felix Gall",
+        "Ben O'Connor",
+        "Lenny Martinez",
+        "Tobias Halland Johannessen",
+        "Santiago Buitrago",
+        "Oscar Onley"
+      ]
     },
     {
       "id": 56,
-      "name": "VAN HAESENDONCK CHRIS",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "JORGENSON", "LIPOWITZ", "RODRIGUEZ", "MARTINEZ LENNY", "SKJELMOSE", "YATES SIMON", "MAS", "ROGLIC", "JOHANNESSEN", "BUITRAGO", "DUNBAR"]
+      "name": "Van Haesendonck Chris",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Florian Lipowitz",
+        "Carlos Rodriguez",
+        "Lenny Martinez",
+        "Mattias Skjelmose",
+        "Simon Yates",
+        "Enric Mas",
+        "Primoz Roglic",
+        "Tobias Halland Johannessen",
+        "Santiago Buitrago",
+        "Edward Dunbar"
+      ]
     },
     {
       "id": 57,
-      "name": "VAN LOMMEL GUY 1",
-      "riders": ["POGACAR", "JORGENSON", "ALMEIDA", "VINGEGAARD", "EVENEPOEL", "LIPOWITZ", "BUITRAGO", "MAS", "GALL", "RODRIGUEZ", "OCONNOR", "MARTIN G", "RODRIGUEZ CHRIS", "BUCHMANN", "CRAS"]
+      "name": "Van Lommel Guy 1",
+      "riders": [
+        "Tadej Pogacar",
+        "Matteo Jorgenson",
+        "Joao Almeida",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Florian Lipowitz",
+        "Santiago Buitrago",
+        "Enric Mas",
+        "Felix Gall",
+        "Carlos Rodriguez",
+        "Ben O'Connor",
+        "Guillaume Martin-Guyonnet",
+        "Cristian Rodriguez",
+        "Emanuel Buchmann",
+        "Steff Cras"
+      ]
     },
     {
       "id": 58,
-      "name": "VAN LOMMEL GUY 2",
-      "riders": ["MARTINEZ LENNY", "POGACAR", "RODRIGUEZ", "LIPOWITZ", "JORGENSON", "ONLEY", "VINGEGAARD", "EVENEPOEL", "OCONNOR", "ROGLIC", "BUITRAGO", "MAS", "JOHANNESSEN", "SKJELMOSE", "YATES ADAM"]
+      "name": "Van Lommel Guy 2",
+      "riders": [
+        "Lenny Martinez",
+        "Tadej Pogacar",
+        "Carlos Rodriguez",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Oscar Onley",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Ben O'Connor",
+        "Primoz Roglic",
+        "Santiago Buitrago",
+        "Enric Mas",
+        "Tobias Halland Johannessen",
+        "Mattias Skjelmose",
+        "Adam Yates"
+      ]
     },
     {
       "id": 59,
-      "name": "VAN MESSEM BART",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ROGLIC", "JORGENSON", "RODRIGUEZ", "ALMEIDA", "YATES ADAM", "BUITRAGO", "MARTIN G", "MAS", "KUSS", "YATES SIMON", "LIPOWITZ", "JOHANNESSEN"]
+      "name": "Van Messem Bart",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Joao Almeida",
+        "Adam Yates",
+        "Santiago Buitrago",
+        "Guillaume Martin-Guyonnet",
+        "Enric Mas",
+        "Sepp Kuss",
+        "Simon Yates",
+        "Florian Lipowitz",
+        "Tobias Halland Johannessen"
+      ]
     },
     {
       "id": 60,
-      "name": "VAN MESSEM EVA",
-      "riders": ["POGACAR", "EVENEPOEL", "VINGEGAARD", "ALMEIDA", "JORGENSON", "SKJELMOSE", "BUITRAGO", "RODRIGUEZ", "MARTINEZ LENNY", "MAS", "GALL", "OCONNOR", "JOHANNESSEN", "CRAS", "TEJADA"]
+      "name": "Van Messem Eva",
+      "riders": [
+        "Tadej Pogacar",
+        "Remco Evenepoel",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Mattias Skjelmose",
+        "Santiago Buitrago",
+        "Carlos Rodriguez",
+        "Lenny Martinez",
+        "Enric Mas",
+        "Felix Gall",
+        "Ben O'Connor",
+        "Tobias Halland Johannessen",
+        "Steff Cras",
+        "Harold Tejada"
+      ]
     },
     {
       "id": 61,
-      "name": "VAN NOYEN STEVEN",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "ROGLIC", "RODRIGUEZ", "LIPOWITZ", "JORGENSON", "GALL", "MAS", "VLASOV", "VAUQUELIN", "ONLEY", "KUSS", "VANWILDER"]
+      "name": "Van Noyen Steven",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Primoz Roglic",
+        "Carlos Rodriguez",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Felix Gall",
+        "Enric Mas",
+        "Aleksandr Vlasov",
+        "Kévin Vauquelin",
+        "Oscar Onley",
+        "Sepp Kuss",
+        "Mathieu van der Poel"
+      ]
     },
     {
       "id": 62,
-      "name": "VAN RENTERGHEM ERIKA 1",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "LIPOWITZ", "JORGENSON", "ROGLIC", "MAS", "RODRIGUEZ", "YATES SIMON", "SKJELMOSE", "GALL", "CARAPAZ", "YATES ADAM", "LANDA"]
+      "name": "Van Renterghem Erika 1",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Primoz Roglic",
+        "Enric Mas",
+        "Carlos Rodriguez",
+        "Simon Yates",
+        "Mattias Skjelmose",
+        "Felix Gall",
+        "Richard Carapaz",
+        "Adam Yates",
+        "Mikel Landa"
+      ]
     },
     {
       "id": 63,
-      "name": "VAN RENTERGHEM ERIKA 2",
-      "riders": ["POGACAR", "VINGEGAARD", "ALMEIDA", "EVENEPOEL", "ROGLIC", "JORGENSON", "LIPOWITZ", "SKJELMOSE", "GALL", "RODRIGUEZ", "YATES SIMON", "OCONNOR", "MAS", "YATES ADAM", "CARAPAZ"]
+      "name": "Van Renterghem Erika 2",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Matteo Jorgenson",
+        "Florian Lipowitz",
+        "Mattias Skjelmose",
+        "Felix Gall",
+        "Carlos Rodriguez",
+        "Simon Yates",
+        "Ben O'Connor",
+        "Enric Mas",
+        "Adam Yates",
+        "Richard Carapaz"
+      ]
     },
     {
       "id": 64,
-      "name": "VANWAEYENBERGHE THOMAS",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "ROGLIC", "JORGENSON", "RODRIGUEZ", "OCONNOR", "YATES ADAM", "BUITRAGO", "LIPOWITZ", "SKJELMOSE", "MAS", "GALL", "VAUQUELIN"]
+      "name": "Vanwaeyenberghe Thomas",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Primoz Roglic",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Ben O'Connor",
+        "Adam Yates",
+        "Santiago Buitrago",
+        "Florian Lipowitz",
+        "Mattias Skjelmose",
+        "Enric Mas",
+        "Felix Gall",
+        "Kévin Vauquelin"
+      ]
     },
     {
       "id": 65,
-      "name": "VANWAEYENBERGHE WILLY",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "LIPOWITZ", "SKJELMOSE", "ROGLIC", "ALMEIDA", "JOHANNESSEN", "ONLEY", "VAUQUELIN", "BUITRAGO", "RODRIGUEZ", "GALL", "JORGENSON", "MARTINEZ LENNY"]
+      "name": "Vanwaeyenberghe Willy",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Florian Lipowitz",
+        "Mattias Skjelmose",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Tobias Halland Johannessen",
+        "Oscar Onley",
+        "Kévin Vauquelin",
+        "Santiago Buitrago",
+        "Carlos Rodriguez",
+        "Felix Gall",
+        "Matteo Jorgenson",
+        "Lenny Martinez"
+      ]
     },
     {
       "id": 66,
-      "name": "VERBERGT JAN",
-      "riders": ["POGACAR", "VINGEGAARD", "THOMAS", "EVENEPOEL", "RODRIGUEZ", "LUTSENKO", "MAS", "ROGLIC", "OCONNOR", "GALL", "BUCHMANN", "BUITRAGO", "YATES SIMON", "JORGENSON", "YATES ADAM"]
+      "name": "Verbergt Jan",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Enric Mas",
+        "Remco Evenepoel",
+        "Carlos Rodriguez",
+        "Alexey Lutsenko",
+        "Enric Mas",
+        "Primoz Roglic",
+        "Ben O'Connor",
+        "Felix Gall",
+        "Emanuel Buchmann",
+        "Santiago Buitrago",
+        "Simon Yates",
+        "Matteo Jorgenson",
+        "Adam Yates"
+      ]
     },
     {
       "id": 67,
-      "name": "VERCAMMEN CHERIF",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "LIPOWITZ", "JORGENSON", "ALMEIDA", "ROGLIC", "MAS", "SKJELMOSE", "YATES ADAM", "RODRIGUEZ", "BUITRAGO", "CRAS", "YATES SIMON", "GALL"]
+      "name": "Vercammen Cherif",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Joao Almeida",
+        "Primoz Roglic",
+        "Enric Mas",
+        "Mattias Skjelmose",
+        "Adam Yates",
+        "Carlos Rodriguez",
+        "Santiago Buitrago",
+        "Steff Cras",
+        "Simon Yates",
+        "Felix Gall"
+      ]
     },
     {
       "id": 68,
-      "name": "VERCAMMEN DIRK",
-      "riders": ["POGACAR", "VINGEGAARD", "ROGLIC", "ALMEIDA", "EVENEPOEL", "MAS", "YATES ADAM", "YATES SIMON", "JORGENSON", "RODRIGUEZ", "OCONNOR", "LIPOWITZ", "KUSS", "SKJELMOSE", "GALL"]
+      "name": "Vercammen Dirk",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Remco Evenepoel",
+        "Enric Mas",
+        "Adam Yates",
+        "Simon Yates",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Ben O'Connor",
+        "Florian Lipowitz",
+        "Sepp Kuss",
+        "Mattias Skjelmose",
+        "Felix Gall"
+      ]
     },
     {
       "id": 69,
-      "name": "VERCAMMEN DRIES",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "LIPOWITZ", "JORGENSON", "JOHANNESSEN", "GALL", "MAS", "RODRIGUEZ", "YATES ADAM", "BUITRAGO", "YATES SIMON", "OCONNOR", "SKJELMOSE"]
+      "name": "Vercammen Dries",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Florian Lipowitz",
+        "Matteo Jorgenson",
+        "Tobias Halland Johannessen",
+        "Felix Gall",
+        "Enric Mas",
+        "Carlos Rodriguez",
+        "Adam Yates",
+        "Santiago Buitrago",
+        "Simon Yates",
+        "Ben O'Connor",
+        "Mattias Skjelmose"
+      ]
     },
     {
       "id": 70,
-      "name": "VERCAMMEN ERIK",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ROGLIC", "ALMEIDA", "JORGENSON", "RODRIGUEZ", "MAS", "YATES ADAM", "SKJELMOSE", "LIPOWITZ", "YATES SIMON", "KUSS", "GALL", "CRAS"]
+      "name": "Vercammen Erik",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Carlos Rodriguez",
+        "Enric Mas",
+        "Adam Yates",
+        "Mattias Skjelmose",
+        "Florian Lipowitz",
+        "Simon Yates",
+        "Sepp Kuss",
+        "Felix Gall",
+        "Steff Cras"
+      ]
     },
     {
       "id": 71,
-      "name": "VERHOEVEN ELIEN",
-      "riders": ["POGACAR", "VINGEGAARD", "ROGLIC", "SKJELMOSE", "LIPOWITZ", "ALMEIDA", "EVENEPOEL", "JORGENSON", "MARTINEZ LENNY", "RODRIGUEZ", "MAS", "KUSS", "YATES SIMON", "VLASOV", "OCONNOR"]
+      "name": "Verhoeven Elien",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Primoz Roglic",
+        "Mattias Skjelmose",
+        "Florian Lipowitz",
+        "Joao Almeida",
+        "Remco Evenepoel",
+        "Matteo Jorgenson",
+        "Lenny Martinez",
+        "Carlos Rodriguez",
+        "Enric Mas",
+        "Sepp Kuss",
+        "Simon Yates",
+        "Aleksandr Vlasov",
+        "Ben O'Connor"
+      ]
     },
     {
       "id": 72,
-      "name": "VERHOEVEN ILSE",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ROGLIC", "RODRIGUEZ", "ALMEIDA", "JORGENSON", "LIPOWITZ", "KUSS", "MAS", "SKJELMOSE", "VLASOV", "MARTINEZ LENNY", "YATES SIMON", "OCONNOR"]
+      "name": "Verhoeven Ilse",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Carlos Rodriguez",
+        "Joao Almeida",
+        "Matteo Jorgenson",
+        "Florian Lipowitz",
+        "Sepp Kuss",
+        "Enric Mas",
+        "Mattias Skjelmose",
+        "Aleksandr Vlasov",
+        "Lenny Martinez",
+        "Simon Yates",
+        "Ben O'Connor"
+      ]
     },
     {
       "id": 73,
-      "name": "VERHOEVEN LOWIE",
-      "riders": ["POGACAR", "RODRIGUEZ", "VINGEGAARD", "ALMEIDA", "EVENEPOEL", "OCONNOR", "MAS", "MARTIN G", "ARENSMAN", "BUCHMANN", "BUITRAGO", "ROGLIC", "GALL", "SKJELMOSE", "POWLESS"]
+      "name": "Verhoeven Lowie",
+      "riders": [
+        "Tadej Pogacar",
+        "Carlos Rodriguez",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Remco Evenepoel",
+        "Ben O'Connor",
+        "Enric Mas",
+        "Guillaume Martin-Guyonnet",
+        "Thymen Arensman",
+        "Emanuel Buchmann",
+        "Santiago Buitrago",
+        "Primoz Roglic",
+        "Felix Gall",
+        "Mattias Skjelmose",
+        "Neilson Powless"
+      ]
     },
     {
       "id": 74,
-      "name": "VERLINDEN BEN",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ALMEIDA", "MAS", "LIPOWITZ", "ROGLIC", "RODRIGUEZ", "OCONNOR", "GALL", "YATES ADAM", "THOMAS", "JOHANNESSEN", "SKJELMOSE", "ONLEY"]
+      "name": "Verlinden Ben",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Joao Almeida",
+        "Enric Mas",
+        "Florian Lipowitz",
+        "Primoz Roglic",
+        "Carlos Rodriguez",
+        "Ben O'Connor",
+        "Felix Gall",
+        "Adam Yates",
+        "Enric Mas",
+        "Tobias Halland Johannessen",
+        "Mattias Skjelmose",
+        "Oscar Onley"
+      ]
     },
     {
       "id": 75,
-      "name": "VERLINDEN BERT",
-      "riders": ["POGACAR", "VINGEGAARD", "JORGENSON", "LIPOWITZ", "EVENEPOEL", "ROGLIC", "ALMEIDA", "MAS", "MARTINEZ LENNY", "SKJELMOSE", "ARENSMAN", "RODRIGUEZ", "BUITRAGO", "YATES SIMON", "SIVAKOV"]
+      "name": "Verlinden Bert",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Matteo Jorgenson",
+        "Florian Lipowitz",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Joao Almeida",
+        "Enric Mas",
+        "Lenny Martinez",
+        "Mattias Skjelmose",
+        "Thymen Arensman",
+        "Carlos Rodriguez",
+        "Santiago Buitrago",
+        "Simon Yates",
+        "Pavel Sivakov"
+      ]
     },
     {
       "id": 76,
-      "name": "VERSTEVEN KAROLIEN",
-      "riders": ["POGACAR", "VINGEGAARD", "EVENEPOEL", "ROGLIC", "RODRIGUEZ", "SKJELMOSE", "MARTINEZ LANNY", "JORGENSON", "GALL", "YATES SIMON", "YATES ADAM", "OCONNOR", "ALMEIDA", "JOHANNESSEN", "VAUQUELIN"]
+      "name": "Versteven Karolien",
+      "riders": [
+        "Tadej Pogacar",
+        "Jonas Vingegaard",
+        "Remco Evenepoel",
+        "Primoz Roglic",
+        "Carlos Rodriguez",
+        "Mattias Skjelmose",
+        "Lenny Martinez",
+        "Matteo Jorgenson",
+        "Felix Gall",
+        "Simon Yates",
+        "Adam Yates",
+        "Ben O'Connor",
+        "Joao Almeida",
+        "Tobias Halland Johannessen",
+        "Kévin Vauquelin"
+      ]
     },
     {
       "id": 77,
-      "name": "VERCAMMEN SAM",
-      "riders": ["POGACAR", "EVENEPOEL", "VINGEGAARD", "ALMEIDA", "RODRIGUEZ", "ROGLIC", "OCONNOR", "YATES SIMON", "MAS", "GALL", "JORGENSON", "MARTIN G", "KUSS", "VAUQUELIN", "ONLEY"]
+      "name": "Vercammen Sam",
+      "riders": [
+        "Tadej Pogacar",
+        "Remco Evenepoel",
+        "Jonas Vingegaard",
+        "Joao Almeida",
+        "Carlos Rodriguez",
+        "Primoz Roglic",
+        "Ben O'Connor",
+        "Simon Yates",
+        "Enric Mas",
+        "Felix Gall",
+        "Matteo Jorgenson",
+        "Guillaume Martin-Guyonnet",
+        "Sepp Kuss",
+        "Kévin Vauquelin",
+        "Oscar Onley"
+      ]
     },
     {
       "id": 78,
-      "name": "VEREST LUC",
-      "riders": ["POGACAR", "EVENEPOEL", "VINGEGAARD", "RODRIGUEZ", "BUCHMANN", "JORGENSON", "ALMEIDA", "OCONNOR", "MAS", "VLASOV", "KUSS", "MARTIN G", "MADOUAS", "YATES ADAM", "LUTSENKO"]
+      "name": "Verest Luc",
+      "riders": [
+        "Tadej Pogacar",
+        "Remco Evenepoel",
+        "Jonas Vingegaard",
+        "Carlos Rodriguez",
+        "Emanuel Buchmann",
+        "Matteo Jorgenson",
+        "Joao Almeida",
+        "Ben O'Connor",
+        "Enric Mas",
+        "Aleksandr Vlasov",
+        "Sepp Kuss",
+        "Guillaume Martin-Guyonnet",
+        "Valentin Madouas",
+        "Adam Yates",
+        "Alexey Lutsenko"
+      ]
     }
   ]
 }
