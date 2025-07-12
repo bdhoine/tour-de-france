@@ -1,0 +1,885 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background: #000000;
+    min-height: 100vh;
+    padding: 0;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #000000;
+    overflow: hidden;
+}
+
+.header {
+    background: #000000;
+    color: #ffffff;
+    padding: 40px 30px;
+    text-align: center;
+    border-bottom: 3px solid #FFD100;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.main-view {
+    padding: 30px;
+    background: #000000;
+}
+
+.search-container {
+    margin-bottom: 30px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+    background: #111111;
+    color: #ffffff;
+}
+
+.search-input:focus {
+    border-color: #FFD100;
+}
+
+.search-input::placeholder {
+    color: #888888;
+}
+
+.table-container {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #333333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #000000;
+}
+
+th {
+    background: #222222;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #FFD100;
+}
+
+td {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 20px;
+    border-bottom: 1px solid #333333;
+    background: #000000;
+    color: #ffffff;
+}
+
+tr {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+tr:nth-child(even) td {
+    background: #0a0a0a;
+}
+
+tr:hover td {
+    background: #1a1a1a;
+}
+
+/* Participants table specific styles */
+.main-view td:nth-child(2) {
+    text-align: left;
+}
+
+.back-button {
+    background: #FFD100;
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 209, 0, 0.3);
+}
+
+.detail-view {
+    display: none;
+    padding: 30px;
+    background: #000000;
+}
+
+.detail-header {
+    background: #111111;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 2px solid #FFD100;
+}
+
+.detail-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #FFD100;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.detail-header p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+.riders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.riders-section {
+    background: #111111;
+    border-radius: 12px;
+    padding: 25px;
+    border: 2px solid #333333;
+}
+
+.riders-section h3 {
+    color: #FFD100;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #FFD100;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.rider-list {
+    list-style: none;
+}
+
+.rider-item {
+    background: #222222;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #FFD100;
+    font-weight: 500;
+    transition: transform 0.3s, background-color 0.3s;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.rider-item:hover {
+    transform: translateX(5px);
+    background: #333333;
+}
+
+.reserve-riders .rider-item {
+    background: #1a1a1a;
+    border-left-color: #888888;
+}
+
+.reserve-riders .rider-item:hover {
+    background: #2a2a2a;
+}
+
+.hidden {
+    display: none;
+}
+
+.action-button {
+    background: #FFD100;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.action-button:hover {
+    background: #e6bc00;
+    transform: translateY(-2px);
+}
+
+/* Navigation styles */
+.navigation {
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nav-item {
+    background: #111111;
+    border: 2px solid #333333;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    border-color: #FFD100;
+    background: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 209, 0, 0.2);
+}
+
+.nav-item:hover::before {
+    background: #FFD100;
+}
+
+.nav-item.active {
+    border-color: #FFD100;
+    background: #1a1a00;
+}
+
+.nav-item.active::before {
+    background: #FFD100;
+}
+
+.nav-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover .nav-icon,
+.nav-item.active .nav-icon {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nav-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-subtitle {
+    font-size: 12px;
+    color: #aaaaaa;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.nav-item:hover .nav-title,
+.nav-item.active .nav-title {
+    color: #FFD100;
+}
+
+.nav-item:hover .nav-subtitle,
+.nav-item.active .nav-subtitle {
+    color: #cccccc;
+}
+
+/* GC View styles */
+.gc-view {
+    display: none;
+    padding: 30px;
+    background: #000000;
+}
+
+.gc-header {
+    background: #111111;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 2px solid #FFD100;
+}
+
+.gc-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #FFD100;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.gc-header p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+.gc-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.gc-standings h3,
+.abandoned-riders h3 {
+    color: #FFD100;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #FFD100;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* GC Table specific styles - using consistent styling */
+.gc-standings .table-container {
+    border: 1px solid #333333;
+    background: #000000;
+}
+
+.gc-standings table {
+    background: #000000;
+}
+
+.gc-standings th {
+    background: #222222;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #FFD100;
+}
+
+/* GC table header alignment */
+.gc-standings th:nth-child(2) {
+    text-align: left;
+}
+
+.gc-standings td {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 20px;
+    border-bottom: 1px solid #333333;
+    background: #000000;
+    color: #ffffff;
+}
+
+.gc-standings tr:nth-child(even) td {
+    background: #0a0a0a;
+}
+
+.gc-standings tr:hover td {
+    background: #1a1a1a;
+}
+
+.gc-standings .position {
+    font-weight: 500;
+    text-align: center;
+    width: 80px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gc-standings .rider-name {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+.gc-standings .team-name {
+    color: #aaaaaa;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.gc-standings .time {
+    font-weight: 500;
+    text-align: right;
+    color: #ffffff;
+    font-size: 16px;
+    min-width: 100px;
+}
+
+
+/* Scoring View styles - using consistent styling */
+.scoring-view {
+    display: none;
+    padding: 30px;
+    background: #000000;
+}
+
+.scoring-content {
+    display: block;
+}
+
+.scoring-table-section .table-container {
+    border: 1px solid #333333;
+    background: #000000;
+}
+
+.scoring-table-section table {
+    background: #000000;
+}
+
+.scoring-table-section th {
+    background: #222222;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #FFD100;
+}
+
+.scoring-table-section td {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 20px;
+    border-bottom: 1px solid #333333;
+    background: #000000;
+    color: #ffffff;
+}
+
+.scoring-table-section tr:nth-child(even) td {
+    background: #0a0a0a;
+}
+
+.scoring-table-section tr:hover td {
+    background: #1a1a1a;
+}
+
+/* Scoring table specific styles */
+.scoring-view .rank {
+    font-weight: 500;
+    text-align: center;
+    width: 80px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.scoring-view .participant-name {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 16px;
+    min-width: 200px;
+    text-align: left;
+}
+
+.scoring-view .total-points {
+    font-weight: 500;
+    text-align: right;
+    color: #ffffff;
+    font-size: 16px;
+    min-width: 100px;
+}
+
+/* Scoring table header alignment */
+.scoring-table-section th:nth-child(2) {
+    text-align: left;
+}
+
+.scoring-table-section th:nth-child(3) {
+    text-align: right;
+}
+
+
+/* Scoring Detail View styles - using consistent styling */
+.scoring-detail-view {
+    display: none;
+    padding: 30px;
+    background: #000000;
+}
+
+.scoring-detail-header {
+    background: #111111;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 2px solid #FFD100;
+}
+
+.scoring-detail-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFD100;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.scoring-summary {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.score-item {
+    text-align: center;
+}
+
+.score-label {
+    display: block;
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.score-value {
+    display: block;
+    color: #FFD100;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.detailed-scoring-table h3 {
+    color: #FFD100;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #FFD100;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.detailed-scoring-table .table-container {
+    border: 1px solid #333333;
+    background: #000000;
+}
+
+.detailed-scoring-table table {
+    background: #000000;
+}
+
+.detailed-scoring-table th {
+    background: #222222;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #FFD100;
+}
+
+.detailed-scoring-table td {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 20px;
+    border-bottom: 1px solid #333333;
+    background: #000000;
+    color: #ffffff;
+}
+
+.detailed-scoring-table tr:nth-child(even) td {
+    background: #0a0a0a;
+}
+
+.detailed-scoring-table tr:hover td {
+    background: #1a1a1a;
+}
+
+.detailed-scoring-table .predicted-pos,
+.detailed-scoring-table .actual-pos,
+.detailed-scoring-table .points {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.detailed-scoring-table .predicted-pos {
+    color: #cccccc;
+    width: 100px;
+}
+
+.detailed-scoring-table .rider-name {
+    color: #ffffff;
+    font-weight: 500;
+    min-width: 200px;
+    font-size: 16px;
+}
+
+.detailed-scoring-table .actual-pos {
+    color: #FFD100;
+    width: 100px;
+}
+
+.detailed-scoring-table .points {
+    color: #ffffff;
+    width: 100px;
+}
+
+.dnf-rider td {
+    background: #2a1111 !important;
+    border-left: 4px solid #ff4444 !important;
+    opacity: 0.6;
+}
+
+.dnf-rider .actual-pos {
+    color: #ff6666 !important;
+}
+
+.dnf-rider .points {
+    color: #ff6666 !important;
+}
+
+.substitute-rider td {
+    background: #1a1a2a !important;
+    border-left: 4px solid #4488ff !important;
+}
+
+.substitute-rider .predicted-pos {
+    color: #4488ff !important;
+}
+
+.substitute-rider .rider-name {
+    color: #88aaff !important;
+}
+
+.substitute-rider .rider-name::before {
+    content: "🔄 ";
+    color: #4488ff;
+}
+
+.substitute-indicator {
+    font-size: 12px;
+    color: #4488ff;
+    font-style: italic;
+    display: block;
+    margin-top: 2px;
+}
+
+.dnf-rider .substitute-indicator {
+    color: #ff6666;
+}
+
+.no-replacement td {
+    background: #3a1111 !important;
+    border-left: 4px solid #ff8800 !important;
+}
+
+.no-replacement .points {
+    color: #ff8800 !important;
+    font-weight: bold;
+}
+
+.no-replacement .substitute-indicator {
+    color: #ff8800 !important;
+    font-weight: bold;
+}
+
+/* Abandoned riders styles */
+.abandoned-riders {
+    background: #111111;
+    border-radius: 12px;
+    padding: 25px;
+    border: 2px solid #333333;
+}
+
+.abandoned-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.abandoned-rider {
+    background: #222222;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #ff4444;
+}
+
+.abandoned-rider-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.abandoned-rider-info strong {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.abandoned-rider-info .team {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.abandoned-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.abandoned-details .stage {
+    color: #FFD100;
+    font-weight: bold;
+}
+
+.abandoned-details .reason {
+    color: #ff6666;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 30px 20px;
+    }
+    
+    .header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .navigation {
+        padding: 0 10px;
+    }
+    
+    .nav-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: 100%;
+    }
+    
+    .nav-item {
+        padding: 15px;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .nav-icon {
+        font-size: 24px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+    
+    .nav-text {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .nav-title {
+        font-size: 14px;
+    }
+    
+    .nav-subtitle {
+        font-size: 11px;
+    }
+    
+    .scoring-view, .scoring-detail-view, .main-view, .detail-view, .gc-view {
+        padding: 20px;
+    }
+    
+    .scoring-summary {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .gc-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .gc-header h2 {
+        font-size: 2rem;
+    }
+    
+    th, td {
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+    
+    .riders-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .detail-header h2 {
+        font-size: 2rem;
+    }
+    
+    .search-input {
+        padding: 12px 15px;
+    }
+    
+    .abandoned-details {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,156 @@
+{
+  "gc_standings": [
+    {
+      "position": 1,
+      "rider": "POGACAR",
+      "team": "UAE Team Emirates",
+      "time": "0:00:00"
+    },
+    {
+      "position": 2,
+      "rider": "VINGEGAARD",
+      "team": "Visma-lease a Bike",
+      "time": "+1:06"
+    },
+    {
+      "position": 3,
+      "rider": "EVENEPOEL",
+      "team": "Soudal Quick-Step",
+      "time": "+1:14"
+    },
+    {
+      "position": 4,
+      "rider": "ALMEIDA",
+      "team": "UAE Team Emirates",
+      "time": "+4:20"
+    },
+    {
+      "position": 5,
+      "rider": "MAS",
+      "team": "Movistar Team",
+      "time": "+6:47"
+    },
+    {
+      "position": 6,
+      "rider": "RODRIGUEZ",
+      "team": "INEOS Grenadiers",
+      "time": "+6:51"
+    },
+    {
+      "position": 7,
+      "rider": "JORGENSON",
+      "team": "Visma-lease a Bike",
+      "time": "+7:13"
+    },
+    {
+      "position": 8,
+      "rider": "YATES ADAM",
+      "team": "UAE Team Emirates",
+      "time": "+7:57"
+    },
+    {
+      "position": 9,
+      "rider": "LIPOWITZ",
+      "team": "Red Bull-BORA-hansgrohe",
+      "time": "+8:12"
+    },
+    {
+      "position": 10,
+      "rider": "GALL",
+      "team": "Decathlon AG2R La Mondiale",
+      "time": "+9:18"
+    },
+    {
+      "position": 11,
+      "rider": "OCONNOR",
+      "team": "Decathlon AG2R La Mondiale",
+      "time": "+10:33"
+    },
+    {
+      "position": 12,
+      "rider": "JOHANNESSEN",
+      "team": "Visma-lease a Bike",
+      "time": "+12:25"
+    },
+    {
+      "position": 13,
+      "rider": "SKJELMOSE",
+      "team": "Lidl-Trek",
+      "time": "+13:02"
+    },
+    {
+      "position": 14,
+      "rider": "BUITRAGO",
+      "team": "Bahrain Victorious",
+      "time": "+13:38"
+    },
+    {
+      "position": 15,
+      "rider": "KUSS",
+      "team": "Visma-lease a Bike",
+      "time": "+14:47"
+    },
+    {
+      "position": 16,
+      "rider": "YATES SIMON",
+      "team": "Team Jayco-AlUla",
+      "time": "+15:12"
+    },
+    {
+      "position": 17,
+      "rider": "MARTINEZ LENNY",
+      "team": "Groupama-FDJ",
+      "time": "+16:28"
+    },
+    {
+      "position": 18,
+      "rider": "VLASOV",
+      "team": "Red Bull-BORA-hansgrohe",
+      "time": "+17:05"
+    },
+    {
+      "position": 19,
+      "rider": "ONLEY",
+      "team": "dsm-firmenich PostNL",
+      "time": "+18:33"
+    },
+    {
+      "position": 20,
+      "rider": "MARTIN G",
+      "team": "Cofidis",
+      "time": "+19:47"
+    }
+  ],
+  "abandoned_riders": [
+    {
+      "rider": "ROGLIC",
+      "team": "Red Bull-BORA-hansgrohe",
+      "stage": "12",
+      "reason": "Crash injuries"
+    },
+    {
+      "rider": "CARAPAZ",
+      "team": "EF Education-EasyPost",
+      "stage": "8",
+      "reason": "COVID-19"
+    },
+    {
+      "rider": "THOMAS",
+      "team": "INEOS Grenadiers",
+      "stage": "5",
+      "reason": "Illness"
+    },
+    {
+      "rider": "POWLESS",
+      "team": "EF Education-EasyPost",
+      "stage": "10",
+      "reason": "Crash injuries"
+    },
+    {
+      "rider": "SIVAKOV",
+      "team": "UAE Team Emirates",
+      "stage": "7",
+      "reason": "Illness"
+    }
+  ]
+}
