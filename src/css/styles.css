@@ -785,10 +785,9 @@ tr:hover td {
 }
 
 .gc-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 30px;
-    align-items: start;
 }
 
 .gc-standings h3,
@@ -956,12 +955,16 @@ tr:hover td {
 }
 
 /* Scoring table header alignment */
+.scoring-table-section th:nth-child(1) {
+    text-align: center;
+}
+
 .scoring-table-section th:nth-child(2) {
     text-align: left;
 }
 
 .scoring-table-section th:nth-child(3) {
-    text-align: right;
+    text-align: center;
 }
 
 /* Participants table styling */
@@ -1616,7 +1619,6 @@ tr:hover td {
     }
     
     .gc-content {
-        grid-template-columns: 1fr;
         gap: 20px;
     }
     
