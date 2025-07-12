@@ -31,7 +31,9 @@ export class UIManager {
             totalPoints: document.getElementById('totalPoints'),
             participantRank: document.getElementById('participantRank'),
             substitutesUsed: document.getElementById('substitutesUsed'),
-            detailedScoringBody: document.getElementById('detailedScoringBody')
+            detailedScoringBody: document.getElementById('detailedScoringBody'),
+            participantTotalPoints: document.getElementById('participantTotalPoints'),
+            participantCurrentRank: document.getElementById('participantCurrentRank')
         };
     }
 
@@ -82,6 +84,9 @@ export class UIManager {
         window.showMainView = () => this.showMainView();
         window.showScoringView = () => this.showScoringView();
         window.showScoringDetailView = (id) => this.showScoringDetailView(id);
+        
+        // Add jump to leavers functionality
+        this.bindJumpToLeavers();
     }
 
     displayParticipants(participants) {
@@ -146,6 +151,21 @@ export class UIManager {
 
         this.elements.participantName.textContent = participant.name;
         
+        // Calculate scoring data if not already calculated
+        if (!this.dataManager.scoringData) {
+            this.dataManager.calculateScoring();
+        }
+        
+        // Get participant's score data
+        const scoreData = this.dataManager.getParticipantScore(participantId);
+        if (scoreData) {
+            this.elements.participantTotalPoints.textContent = scoreData.total_points;
+            this.elements.participantCurrentRank.textContent = `#${scoreData.rank}`;
+        } else {
+            this.elements.participantTotalPoints.textContent = '-';
+            this.elements.participantCurrentRank.textContent = '-';
+        }
+        
         // Update navigation to show participants as active
         this.elements.navScoring.classList.remove('active');
         this.elements.navParticipants.classList.add('active');
@@ -178,7 +198,6 @@ export class UIManager {
             row.innerHTML = `
                 <td class="position ${isReserve ? 'reserve-position' : 'main-position'}">${position}</td>
                 <td class="rider-name">${rider}</td>
-                <td class="team-name">${riderStatus.team || 'N/A'}</td>
                 <td class="rider-status ${riderStatus.statusClass}">${riderStatus.status}</td>
             `;
             
@@ -202,7 +221,7 @@ export class UIManager {
         
         if (activeRider) {
             return { 
-                status: `GC ${activeRider.position}`, 
+                status: activeRider.position, 
                 statusClass: 'active-rider',
                 team: activeRider.team 
             };
@@ -318,8 +337,7 @@ export class UIManager {
             const row = document.createElement('tr');
             row.innerHTML = `
                 <td class="position">${rider.position}</td>
-                <td class="rider-name">${rider.rider}</td>
-                <td class="team-name">${rider.team}</td>
+                <td class="rider-name">${rider.rider}<div class="team-subtitle">${rider.team}</div></td>
                 <td class="time">${rider.time}</td>
             `;
             
@@ -585,6 +603,22 @@ export class UIManager {
                     const header = e.target.classList.contains('sortable') ? e.target : e.target.parentElement;
                     const sortField = header.dataset.sort;
                     this.sortScoringTable(sortField);
+                }
+            });
+        }
+    }
+
+    bindJumpToLeavers() {
+        const jumpButton = document.querySelector('.jump-button');
+        if (jumpButton) {
+            jumpButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                const ridersWhoLeftSection = document.getElementById('riders-who-left');
+                if (ridersWhoLeftSection) {
+                    ridersWhoLeftSection.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
         }

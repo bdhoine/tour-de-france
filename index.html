@@ -47,9 +47,9 @@
                         <table id="scoringTable">
                             <thead>
                                 <tr>
-                                    <th class="sortable" data-sort="rank">Rank <span class="sort-indicator"></span></th>
+                                    <th class="sortable" data-sort="rank"># <span class="sort-indicator"></span></th>
                                     <th class="sortable" data-sort="name">Participant <span class="sort-indicator"></span></th>
-                                    <th class="sortable" data-sort="points">Total Points <span class="sort-indicator"></span></th>
+                                    <th class="sortable" data-sort="points">Total <span class="sort-indicator"></span></th>
                                 </tr>
                             </thead>
                             <tbody id="scoringTableBody">
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div id="mainView" class="main-view">
+        <div id="mainView" class="main-view view-container">
 
             <div class="search-container">
                 <input type="text" id="searchInput" class="search-input" placeholder="Search participants by name...">
@@ -71,9 +71,9 @@
                 <table id="participantsTable">
                     <thead>
                         <tr>
-                            <th class="sortable" data-sort="position">Pos <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-sort="position"># <span class="sort-indicator"></span></th>
                             <th class="sortable" data-sort="name">Name <span class="sort-indicator"></span></th>
-                            <th class="sortable" data-sort="points">Points <span class="sort-indicator"></span></th>
+                            <th class="sortable" data-sort="points">Score <span class="sort-indicator"></span></th>
                         </tr>
                     </thead>
                     <tbody id="tableBody">
@@ -83,34 +83,51 @@
             </div>
         </div>
 
-        <div id="detailView" class="detail-view">
-            <button class="back-button" onclick="window.location.hash = 'participants'">← Back to Participants</button>
+        <div id="detailView" class="detail-view view-container">
+            <button class="btn btn-back back-button" onclick="window.location.hash = 'participants'">← Back to Participants</button>
             
             <div class="detail-header">
                 <h2 id="participantName"></h2>
+                <div class="detail-summary">
+                    <div class="score-card">
+                        <div class="score-card-content">
+                            <div class="score-main">
+                                <span class="score-value" id="participantTotalPoints"></span>
+                                <span class="score-label">Total Points</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="score-card rank-card">
+                        <div class="score-card-content">
+                            <div class="score-main">
+                                <span class="score-value" id="participantCurrentRank"></span>
+                                <span class="score-label">Current Rank</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="riders-table-view">
                 <div class="table-container">
-                    <table id="participantRidersTable">
+                    <table id="participantRidersTable" class="data-table">
                         <thead>
                             <tr>
-                                <th>Position</th>
+                                <th>#</th>
                                 <th>Rider</th>
-                                <th>Team</th>
-                                <th>Status</th>
+                                <th>GC</th>
                             </tr>
                         </thead>
                         <tbody id="participantRidersBody">
-                            <tr><td colspan="4">Loading...</td></tr>
+                            <tr><td colspan="3">Loading...</td></tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
 
-        <div id="scoringDetailView" class="scoring-detail-view">
-            <button class="back-button" onclick="window.location.hash = 'scoring'">← Back to Scoring</button>
+        <div id="scoringDetailView" class="scoring-detail-view view-container">
+            <button class="btn btn-back back-button" onclick="window.location.hash = 'scoring'">← Back to Scoring</button>
             
             <div class="scoring-detail-header">
                 <h2 id="scoringParticipantName"></h2>
@@ -135,15 +152,14 @@
             </div>
 
             <div class="detailed-scoring-table">
-                <h3>Detailed Scoring Breakdown</h3>
                 <div class="table-container">
                     <table id="detailedScoringTable">
                         <thead>
                             <tr>
-                                <th>Predicted</th>
+                                <th>#</th>
                                 <th>Rider</th>
-                                <th>Actual</th>
-                                <th>Points</th>
+                                <th>GC</th>
+                                <th>Score</th>
                             </tr>
                         </thead>
                         <tbody id="detailedScoringBody">
@@ -157,6 +173,9 @@
         <div id="gcView" class="gc-view">
             <div class="gc-content">
                 <div class="gc-standings">
+                    <div class="jump-to-leavers">
+                        <a href="#riders-who-left" class="btn btn-primary jump-button">Jump to Riders Who Left</a>
+                    </div>
                     <div class="search-container">
                         <input type="text" id="gcSearchInput" class="search-input" placeholder="Search riders by name or team...">
                     </div>
@@ -164,21 +183,20 @@
                         <table id="gcTable">
                             <thead>
                                 <tr>
-                                    <th>Pos</th>
+                                    <th>#</th>
                                     <th>Rider</th>
-                                    <th>Team</th>
                                     <th>Time</th>
                                 </tr>
                             </thead>
                             <tbody id="gcTableBody">
-                                <tr><td colspan="4">Loading...</td></tr>
+                                <tr><td colspan="3">Loading...</td></tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
 
-                <div class="abandoned-riders">
-                    <h3>❌ Riders Who Left the Tour</h3>
+                <div class="abandoned-riders" id="riders-who-left">
+                    <h3>Riders Who Left the Tour</h3>
                     <div class="abandoned-list" id="abandonedList">
                         <p>Loading...</p>
                     </div>

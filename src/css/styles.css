@@ -4,19 +4,45 @@
     box-sizing: border-box;
 }
 
+/* CSS Custom Properties for consistency */
+:root {
+    --primary-yellow: #FFD100;
+    --dark-bg: #000000;
+    --secondary-bg: #111111;
+    --tertiary-bg: #222222;
+    --border-color: #333333;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-muted: #aaaaaa;
+    --status-active: #66ff66;
+    --status-dnf: #ff6666;
+    --status-dns: #6666ff;
+    --shadow-yellow: rgba(255, 209, 0, 0.3);
+}
+
 body {
     font-family: 'Arial', 'Helvetica', sans-serif;
-    background: #000000;
+    background: var(--dark-bg);
     min-height: 100vh;
     padding: 0;
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background: #000000;
+    background: var(--dark-bg);
     overflow: hidden;
+}
+
+/* Unified view container styling */
+.view-container {
+    padding: 30px;
+    background: var(--dark-bg);
+}
+
+.view-container.compact {
+    padding: 20px;
 }
 
 .header {
@@ -28,12 +54,12 @@ body {
 }
 
 .header h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     margin-bottom: 0;
     font-weight: bold;
     color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .main-view {
@@ -42,7 +68,73 @@ body {
 }
 
 .search-container {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+}
+
+/* Jump to leavers button */
+.jump-to-leavers {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.jump-button {
+    background: #FFD100;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.jump-button:hover {
+    background: #e6bc00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-yellow);
+}
+
+/* Unified button component system */
+.btn {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn-primary {
+    background: var(--primary-yellow);
+    color: var(--dark-bg);
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.btn-primary:hover {
+    background: #e6bc00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-yellow);
+}
+
+.btn-back {
+    background: var(--border-color);
+    color: var(--text-primary);
+    padding: 12px 20px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn-back:hover {
+    background: #444444;
+    transform: translateY(-1px);
 }
 
 .search-input {
@@ -69,12 +161,85 @@ body {
     overflow-x: auto;
     border-radius: 8px;
     border: 1px solid #333333;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #FFD100 #333333; /* Firefox */
 }
 
+/* Webkit scrollbar styling */
+.table-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #333333;
+    border-radius: 3px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #FFD100;
+    border-radius: 3px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #e6bc00;
+}
+
+/* Unified table component system */
+.table-wrapper {
+    margin-bottom: 30px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--dark-bg);
+}
+
+.data-table th {
+    background: var(--tertiary-bg);
+    color: var(--text-primary);
+    font-size: 14px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--primary-yellow);
+    text-align: left;
+}
+
+.data-table td {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    background: var(--dark-bg);
+    color: var(--text-primary);
+}
+
+.data-table td:last-child {
+    border-right: none;
+}
+
+.data-table tr:hover td {
+    background: #1a1a1a;
+}
+
+/* Remove striping for cleaner look */
+.data-table tr:nth-child(even) td {
+    background: var(--dark-bg);
+}
+
+.data-table tr:nth-child(even):hover td {
+    background: #1a1a1a;
+}
+
+/* Legacy table support */
 table {
     width: 100%;
     border-collapse: collapse;
-    background: #000000;
+    background: var(--dark-bg);
 }
 
 th {
@@ -107,7 +272,8 @@ th.sortable:hover {
     margin-left: 6px;
     display: inline-block;
     min-width: 15px;
-    text-align: left;
+    width: 15px;
+    text-align: center;
 }
 
 td {
@@ -164,19 +330,19 @@ tr:hover td {
 }
 
 .detail-header {
-    background: #111111;
-    color: #ffffff;
+    background: var(--secondary-bg);
+    color: var(--text-primary);
     padding: 30px;
     border-radius: 12px;
     margin-bottom: 30px;
     text-align: center;
-    border: 2px solid #FFD100;
+    border: 2px solid var(--primary-yellow);
 }
 
 .detail-header h2 {
     font-size: 2.5rem;
-    margin-bottom: 0;
-    color: #FFD100;
+    margin-bottom: 20px;
+    color: var(--primary-yellow);
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -184,7 +350,7 @@ tr:hover td {
 
 .detail-header p {
     font-size: 1.2rem;
-    color: #cccccc;
+    color: var(--text-secondary);
 }
 
 /* Detail Navigation */
@@ -325,75 +491,76 @@ tr:hover td {
     border: 1px solid #4444aa;
 }
 
-/* Participant Detail Table Styling */
-#participantRidersTable {
-    background: #000000;
-}
-
-#participantRidersTable th {
-    background: #222222;
-    color: #ffffff;
-    font-size: 14px;
-    padding: 15px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border-bottom: 2px solid #FFD100;
-    text-align: left;
-}
-
-#participantRidersTable td {
-    font-size: 16px;
-    font-weight: 500;
-    padding: 18px 20px;
-    border-bottom: 1px solid #333333;
-    background: #000000;
-    color: #ffffff;
-}
-
-#participantRidersTable tr:hover td {
-    background: #1a1a1a;
-}
-
-/* Remove striping for participant table */
-#participantRidersTable tr:nth-child(even) td {
-    background: #000000;
-}
-
-#participantRidersTable tr:nth-child(even):hover td {
-    background: #1a1a1a;
+/* Participant Detail Table Specific Styling */
+#participantRidersTable th:nth-child(1),
+#participantRidersTable th:nth-child(3),
+#participantRidersTable td:nth-child(1),
+#participantRidersTable td:nth-child(3) {
+    text-align: center;
 }
 
 /* Yellow divider line between position 10 and 11 */
 .reserve-rider-row:first-of-type td {
-    border-top: 3px solid #FFD100;
+    border-top: 4px solid var(--primary-yellow) !important;
 }
 
-/* Position styling without fills */
+/* Position styling for participant table */
 .main-position,
 .reserve-position {
     font-weight: bold;
     text-align: center;
-    color: #ffffff;
+    color: var(--text-primary);
 }
 
-/* Keep status colors unchanged */
-#participantRidersTable .active-rider {
-    background: #1a4a1a;
-    color: #66ff66;
-    border: 1px solid #44aa44;
+.detail-summary {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
 }
 
-#participantRidersTable .dnf-rider {
-    background: #4a1a1a;
-    color: #ff6666;
-    border: 1px solid #aa4444;
+/* Utility classes for text alignment */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+/* Utility classes for spacing */
+.mb-15 { margin-bottom: 15px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+
+/* Utility classes for colors */
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-muted { color: var(--text-muted); }
+.text-yellow { color: var(--primary-yellow); }
+
+/* Unified status indicator system */
+.status-indicator {
+    font-weight: 500;
+    background: transparent;
+    border: none;
 }
 
+.status-active {
+    color: var(--status-active);
+}
+
+.status-dnf {
+    color: var(--status-dnf);
+}
+
+.status-dns {
+    color: var(--status-dns);
+}
+
+/* Simplified status styling for participant table */
+#participantRidersTable .active-rider,
+#participantRidersTable .dnf-rider,
 #participantRidersTable .dns-rider {
-    background: #1a1a4a;
-    color: #6666ff;
-    border: 1px solid #4444aa;
+    background: transparent;
+    color: var(--text-primary);
+    border: none;
 }
 
 /* Team text styling to match GC table */
@@ -631,7 +798,6 @@ tr:hover td {
     font-size: 1.6rem;
     text-align: center;
     padding-bottom: 15px;
-    border-bottom: 3px solid #FFD100;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -783,7 +949,7 @@ tr:hover td {
 
 .scoring-view .total-points {
     font-weight: 500;
-    text-align: right;
+    text-align: center;
     color: #ffffff;
     font-size: 16px;
     min-width: 100px;
@@ -796,6 +962,26 @@ tr:hover td {
 
 .scoring-table-section th:nth-child(3) {
     text-align: right;
+}
+
+/* Participants table styling */
+#participantsTable .position {
+    text-align: center;
+    font-weight: 500;
+}
+
+#participantsTable .total-points {
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Center align participants table headers */
+#participantsTable th:nth-child(1) {
+    text-align: center;
+}
+
+#participantsTable th:nth-child(3) {
+    text-align: center;
 }
 
 
@@ -1108,6 +1294,258 @@ tr:hover td {
     font-style: italic;
 }
 
+/* iPhone 15 and similar devices (393px wide) */
+@media (max-width: 430px) {
+    .container {
+        padding: 0;
+    }
+    
+    .header {
+        padding: 20px 15px;
+    }
+    
+    .header h1 {
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .main-view, .detail-view, .scoring-view, .scoring-detail-view, .gc-view {
+        padding: 15px 10px;
+    }
+    
+    /* Scoring detail header mobile optimization */
+    .scoring-detail-header {
+        padding: 20px 15px;
+    }
+    
+    .scoring-detail-header h2 {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+    
+    /* Detail view header mobile optimization */
+    .detail-header {
+        padding: 20px 15px;
+    }
+    
+    .detail-header h2 {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+    
+    /* Scoring summary cards side by side on mobile */
+    .scoring-summary {
+        flex-direction: row !important;
+        gap: 10px;
+        margin-top: 15px;
+        justify-content: space-between;
+    }
+    
+    /* Detail summary cards side by side on mobile */
+    .detail-summary {
+        flex-direction: row !important;
+        gap: 10px;
+        margin-top: 15px;
+        justify-content: space-between;
+    }
+    
+    .score-card {
+        padding: 15px 12px;
+        min-width: auto;
+        flex: 1;
+        max-width: 48%;
+    }
+    
+    .score-value {
+        font-size: 20px;
+    }
+    
+    .score-label {
+        font-size: 9px;
+    }
+    
+    /* Ensure table containers extend to screen edges on mobile */
+    .table-container {
+        margin: 0 -10px;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Set minimum table width to ensure horizontal scrolling */
+    table {
+        min-width: 350px; /* Optimized for mobile screens */
+        width: 100%;
+    }
+    
+    /* Scoring table specific width - should fit in most mobile screens */
+    #scoringTable {
+        min-width: 350px; /* Rank(40) + Participant(240) + Total(70) = 350px */
+    }
+    
+    /* Ultra compact table styling for iPhone 15 */
+    th, td {
+        padding: 8px 6px;
+        font-size: 12px;
+        line-height: 1.3;
+        white-space: nowrap;
+    }
+    
+    /* Specific column widths for different tables */
+    #scoringTable th:nth-child(1) { width: 40px; } /* # (Rank) */
+    #scoringTable th:nth-child(2) { width: 240px; } /* Participant */
+    #scoringTable th:nth-child(3) { width: 70px; } /* Total */
+    
+    #participantsTable th:nth-child(1) { width: 50px; } /* Pos */
+    #participantsTable th:nth-child(2) { width: 200px; } /* Name */
+    #participantsTable th:nth-child(3) { width: 80px; } /* Points */
+    
+    #participantRidersTable th:nth-child(1) { width: 30px; } /* # */
+    #participantRidersTable th:nth-child(2) { width: 180px; } /* Rider */
+    #participantRidersTable th:nth-child(3) { width: 50px; } /* GC */
+    
+    #participantRidersTable {
+        min-width: 260px; /* Ensure proper width: 30+180+50 = 260px */
+    }
+    
+    #gcTable th:nth-child(1) { width: 50px; } /* Pos */
+    #gcTable th:nth-child(2) { width: 200px; } /* Rider + Team */
+    #gcTable th:nth-child(3) { width: 100px; } /* Time */
+    
+    #gcTable {
+        min-width: 350px; /* Ensure table fits mobile screens: 50+200+100 = 350px */
+    }
+    
+    /* Center align GC table headers and data */
+    #gcTable th:nth-child(1),
+    #gcTable td:nth-child(1) {
+        text-align: center;
+    }
+    
+    #gcTable th:nth-child(3),
+    #gcTable td:nth-child(3) {
+        text-align: center;
+    }
+    
+    /* Detailed scoring table mobile optimization */
+    #detailedScoringTable th:nth-child(1) { width: 25px; } /* # */
+    #detailedScoringTable th:nth-child(2) { width: 160px; } /* Rider */
+    #detailedScoringTable th:nth-child(3) { width: 40px; } /* GC */
+    #detailedScoringTable th:nth-child(4) { width: 50px; } /* Score */
+    
+    #detailedScoringTable {
+        min-width: 275px; /* Reduced to fit iPhone screens: 25+160+40+50 = 275px */
+        width: 275px; /* Fixed width to prevent expansion */
+    }
+    
+    /* Team subtitle styling */
+    .team-subtitle {
+        font-size: 10px;
+        color: #aaaaaa;
+        font-weight: 400;
+        margin-top: 2px;
+        line-height: 1.2;
+    }
+    
+    /* Mobile text adjustments */
+    .participant-name, .rider-name {
+        font-size: 12px !important;
+        line-height: 1.3;
+    }
+    
+    .team-name {
+        font-size: 11px !important;
+        line-height: 1.3;
+    }
+    
+    .position, .rank {
+        font-size: 12px !important;
+    }
+    
+    .total-points, .time {
+        font-size: 11px !important;
+    }
+    
+    .rider-status {
+        padding: 3px 5px !important;
+        font-size: 10px !important;
+        border-radius: 2px;
+    }
+    
+    /* Compact headers */
+    th {
+        font-size: 11px !important;
+        padding: 8px 6px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+    
+    /* Sort indicators */
+    .sort-indicator {
+        margin-left: 2px;
+        min-width: 8px;
+        width: 8px;
+        font-size: 9px;
+        text-align: center;
+    }
+    
+    /* Navigation adjustments */
+    .nav-container {
+        gap: 8px;
+        padding: 0 5px;
+    }
+    
+    .nav-item {
+        padding: 12px 8px;
+        gap: 10px;
+        min-height: 60px;
+        touch-action: manipulation;
+    }
+    
+    .nav-icon {
+        font-size: 20px;
+    }
+    
+    .nav-title {
+        font-size: 12px;
+    }
+    
+    .nav-subtitle {
+        font-size: 10px;
+    }
+    
+    /* Search input */
+    .search-input {
+        padding: 10px 12px;
+        font-size: 16px; /* Prevents zoom on iOS */
+        margin-bottom: 15px;
+    }
+    
+    /* Score cards */
+    .score-card {
+        padding: 15px 20px;
+        min-width: auto;
+    }
+    
+    .score-value {
+        font-size: 24px;
+    }
+    
+    .score-label {
+        font-size: 10px;
+    }
+    
+    /* Back button */
+    .back-button {
+        padding: 12px 20px;
+        font-size: 14px;
+        margin-bottom: 20px;
+        min-height: 44px;
+    }
+}
+
 @media (max-width: 768px) {
     .header {
         padding: 30px 20px;
@@ -1194,7 +1632,9 @@ tr:hover td {
     .sort-indicator {
         margin-left: 3px;
         min-width: 12px;
+        width: 12px;
         font-size: 10px;
+        text-align: center;
     }
     
     .riders-grid {
@@ -1246,5 +1686,42 @@ tr:hover td {
     .abandoned-details {
         flex-direction: column;
         gap: 5px;
+    }
+    
+    /* Abandoned riders mobile optimization */
+    .abandoned-riders {
+        margin: 0; /* Remove negative margins to constrain width */
+        padding: 15px;
+        max-width: 100%; /* Ensure it doesn't exceed container */
+    }
+    
+    .abandoned-riders h3 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+    
+    .abandoned-rider {
+        padding: 10px 12px;
+    }
+    
+    .abandoned-rider-info strong {
+        font-size: 12px;
+    }
+    
+    .abandoned-rider-info .team {
+        font-size: 10px;
+        color: #aaaaaa;
+    }
+    
+    .abandoned-list {
+        gap: 8px;
+    }
+    
+    /* Jump button mobile optimization */
+    .jump-button {
+        padding: 8px 16px;
+        font-size: 12px;
+        margin-bottom: 10px;
     }
 }
