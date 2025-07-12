@@ -175,15 +175,232 @@ tr:hover td {
 
 .detail-header h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     color: #FFD100;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
 }
 
 .detail-header p {
     font-size: 1.2rem;
     color: #cccccc;
+}
+
+/* Detail Navigation */
+.detail-navigation {
+    margin-top: 20px;
+}
+
+.detail-nav-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.detail-nav-item {
+    background: #111111;
+    border: 2px solid #333333;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.detail-nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+.detail-nav-item:hover {
+    border-color: #FFD100;
+    background: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 209, 0, 0.2);
+}
+
+.detail-nav-item:hover::before {
+    background: #FFD100;
+}
+
+.detail-nav-item.active {
+    border-color: #FFD100;
+    background: #1a1a00;
+}
+
+.detail-nav-item.active::before {
+    background: #FFD100;
+}
+
+.detail-nav-item .nav-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+    filter: grayscale(1);
+    transition: all 0.3s ease;
+}
+
+.detail-nav-item:hover .nav-icon,
+.detail-nav-item.active .nav-icon {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+.detail-nav-item .nav-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detail-nav-item .nav-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-nav-item .nav-subtitle {
+    font-size: 12px;
+    color: #aaaaaa;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.detail-nav-item:hover .nav-title,
+.detail-nav-item.active .nav-title {
+    color: #FFD100;
+}
+
+.detail-nav-item:hover .nav-subtitle,
+.detail-nav-item.active .nav-subtitle {
+    color: #cccccc;
+}
+
+/* Riders Table Views */
+.riders-table-view {
+    margin-top: 30px;
+}
+
+/* Rider Status Styling */
+.rider-status {
+    font-weight: bold;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.active-rider {
+    background: #1a4a1a;
+    color: #66ff66;
+    border: 1px solid #44aa44;
+}
+
+.dnf-rider {
+    background: #4a1a1a;
+    color: #ff6666;
+    border: 1px solid #aa4444;
+}
+
+.dns-rider {
+    background: #1a1a4a;
+    color: #6666ff;
+    border: 1px solid #4444aa;
+}
+
+/* Participant Detail Table Styling */
+#participantRidersTable {
+    background: #000000;
+}
+
+#participantRidersTable th {
+    background: #222222;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #FFD100;
+    text-align: left;
+}
+
+#participantRidersTable td {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 18px 20px;
+    border-bottom: 1px solid #333333;
+    background: #000000;
+    color: #ffffff;
+}
+
+#participantRidersTable tr:hover td {
+    background: #1a1a1a;
+}
+
+/* Remove striping for participant table */
+#participantRidersTable tr:nth-child(even) td {
+    background: #000000;
+}
+
+#participantRidersTable tr:nth-child(even):hover td {
+    background: #1a1a1a;
+}
+
+/* Yellow divider line between position 10 and 11 */
+.reserve-rider-row:first-of-type td {
+    border-top: 3px solid #FFD100;
+}
+
+/* Position styling without fills */
+.main-position,
+.reserve-position {
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Keep status colors unchanged */
+#participantRidersTable .active-rider {
+    background: #1a4a1a;
+    color: #66ff66;
+    border: 1px solid #44aa44;
+}
+
+#participantRidersTable .dnf-rider {
+    background: #4a1a1a;
+    color: #ff6666;
+    border: 1px solid #aa4444;
+}
+
+#participantRidersTable .dns-rider {
+    background: #1a1a4a;
+    color: #6666ff;
+    border: 1px solid #4444aa;
+}
+
+/* Team text styling to match GC table */
+#participantRidersTable .team-name {
+    color: #aaaaaa;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .riders-grid {
@@ -459,6 +676,10 @@ tr:hover td {
     background: #0a0a0a;
 }
 
+.gc-standings tr {
+    cursor: default !important;
+}
+
 .gc-standings tr:hover td {
     background: #1a1a1a;
 }
@@ -606,27 +827,78 @@ tr:hover td {
 .scoring-summary {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
+    margin-top: 20px;
 }
 
-.score-item {
+.score-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border: 2px solid #333333;
+    border-radius: 16px;
+    padding: 25px 35px;
+    min-width: 180px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.score-card:hover {
+    border-color: #FFD100;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 209, 0, 0.2);
+}
+
+.score-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #FFD100, #ffed4e);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.score-card:hover::before {
+    opacity: 1;
+}
+
+.rank-card {
+    background: linear-gradient(135deg, #1a1a00 0%, #2a2a00 100%);
+}
+
+.rank-card::before {
+    background: linear-gradient(90deg, #FFD100, #fff700);
+}
+
+.score-card-content {
     text-align: center;
 }
 
+.score-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
 .score-label {
-    display: block;
     color: #cccccc;
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
 }
 
 .score-value {
-    display: block;
     color: #FFD100;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1;
+    text-shadow: 0 2px 4px rgba(255, 209, 0, 0.3);
 }
 
 .detailed-scoring-table h3 {
@@ -888,7 +1160,21 @@ tr:hover td {
     
     .scoring-summary {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    
+    .score-card {
+        min-width: auto;
+        padding: 20px 25px;
+    }
+    
+    .score-value {
+        font-size: 28px;
+    }
+    
+    .score-label {
+        font-size: 11px;
     }
     
     .gc-content {
@@ -918,6 +1204,39 @@ tr:hover td {
     
     .detail-header h2 {
         font-size: 2rem;
+    }
+    
+    .detail-nav-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        max-width: 100%;
+    }
+    
+    .detail-nav-item {
+        padding: 15px;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .detail-nav-item .nav-icon {
+        font-size: 24px;
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+    
+    .detail-nav-item .nav-text {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .detail-nav-item .nav-title {
+        font-size: 14px;
+    }
+    
+    .detail-nav-item .nav-subtitle {
+        font-size: 11px;
     }
     
     .search-input {

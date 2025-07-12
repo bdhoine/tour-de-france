@@ -18,8 +18,7 @@ export class UIManager {
             tableBody: document.getElementById('tableBody'),
             searchInput: document.getElementById('searchInput'),
             participantName: document.getElementById('participantName'),
-            mainRiders: document.getElementById('mainRiders'),
-            reserveRiders: document.getElementById('reserveRiders'),
+            participantRidersBody: document.getElementById('participantRidersBody'),
             gcTableBody: document.getElementById('gcTableBody'),
             abandonedList: document.getElementById('abandonedList'),
             gcSearchInput: document.getElementById('gcSearchInput'),
@@ -130,40 +129,104 @@ export class UIManager {
         this.displayParticipants(filteredParticipants);
     }
 
-    showDetailView(participantId) {
+    async showDetailView(participantId) {
         const participant = this.dataManager.getParticipant(participantId);
         if (!participant) {
             console.error('Participant not found:', participantId);
             return;
         }
 
+        // Update URL fragment
+        window.location.hash = `participant-detail-${participantId}`;
+
+        // Ensure GC data is loaded for team/status information
+        if (!this.dataManager.gcData) {
+            await this.dataManager.loadGCData();
+        }
+
         this.elements.participantName.textContent = participant.name;
         
-        // Split riders into main (first 10) and reserves (last 5)
-        const mainRiders = participant.riders.slice(0, 10);
-        const reserveRiders = participant.riders.slice(10, 15);
-
-        // Display main riders
-        this.elements.mainRiders.innerHTML = '';
-        mainRiders.forEach((rider, index) => {
-            const li = document.createElement('li');
-            li.className = 'rider-item';
-            li.textContent = `${index + 1}. ${rider}`;
-            this.elements.mainRiders.appendChild(li);
-        });
-
-        // Display reserve riders
-        this.elements.reserveRiders.innerHTML = '';
-        reserveRiders.forEach((rider, index) => {
-            const li = document.createElement('li');
-            li.className = 'rider-item';
-            li.textContent = `${index + 1}. ${rider}`;
-            this.elements.reserveRiders.appendChild(li);
-        });
+        // Update navigation to show participants as active
+        this.elements.navScoring.classList.remove('active');
+        this.elements.navParticipants.classList.add('active');
+        this.elements.navGC.classList.remove('active');
+        
+        // Populate table with all 15 riders
+        this.populateParticipantRidersTable(participant.riders);
 
         // Switch views
+        this.elements.scoringView.style.display = 'none';
+        this.elements.scoringDetailView.style.display = 'none';
         this.elements.mainView.style.display = 'none';
         this.elements.detailView.style.display = 'block';
+        this.elements.gcView.style.display = 'none';
+    }
+
+    populateParticipantRidersTable(riders) {
+        this.elements.participantRidersBody.innerHTML = '';
+        
+        riders.forEach((rider, index) => {
+            const position = index + 1;
+            const row = document.createElement('tr');
+            
+            // Get rider status from GC data
+            const riderStatus = this.getRiderStatus(rider);
+            
+            // Add different styling for main vs reserve riders
+            const isReserve = position > 10;
+            
+            row.innerHTML = `
+                <td class="position ${isReserve ? 'reserve-position' : 'main-position'}">${position}</td>
+                <td class="rider-name">${rider}</td>
+                <td class="team-name">${riderStatus.team || 'N/A'}</td>
+                <td class="rider-status ${riderStatus.statusClass}">${riderStatus.status}</td>
+            `;
+            
+            if (isReserve) {
+                row.classList.add('reserve-rider-row');
+            }
+            
+            this.elements.participantRidersBody.appendChild(row);
+        });
+    }
+
+    getRiderStatus(riderName) {
+        if (!this.dataManager.gcData) {
+            return { status: 'Unknown', statusClass: '', team: '' };
+        }
+        
+        // Check if rider is in active standings
+        const activeRider = this.dataManager.gcData.gc_standings.find(r => 
+            r.rider.toLowerCase() === riderName.toLowerCase()
+        );
+        
+        if (activeRider) {
+            return { 
+                status: `GC ${activeRider.position}`, 
+                statusClass: 'active-rider',
+                team: activeRider.team 
+            };
+        }
+        
+        // Check if rider is abandoned
+        const abandonedRider = this.dataManager.gcData.abandoned_riders.find(r => 
+            r.rider.toLowerCase() === riderName.toLowerCase()
+        );
+        
+        if (abandonedRider) {
+            return { 
+                status: 'DNF', 
+                statusClass: 'dnf-rider',
+                team: abandonedRider.team 
+            };
+        }
+        
+        // Rider not found in race data (DNS)
+        return { 
+            status: 'DNS', 
+            statusClass: 'dns-rider',
+            team: 'N/A' 
+        };
     }
 
     showMainView() {
@@ -379,10 +442,12 @@ export class UIManager {
             return;
         }
 
+        // Update URL fragment
+        window.location.hash = `scoring-detail-${participantId}`;
+
         this.elements.scoringParticipantName.textContent = scoreData.participant_name;
         this.elements.totalPoints.textContent = scoreData.total_points;
         this.elements.participantRank.textContent = `#${scoreData.rank}`;
-        this.elements.substitutesUsed.textContent = scoreData.substitutes_used || 0;
 
         // Display detailed scores
         this.elements.detailedScoringBody.innerHTML = '';
@@ -457,8 +522,33 @@ export class UIManager {
         window.location.hash = fragment;
     }
 
-    handleHashChange() {
+    async handleHashChange() {
         const hash = window.location.hash.substring(1); // Remove the '#'
+        
+        // Check for scoring detail fragments
+        if (hash.startsWith('scoring-detail-')) {
+            const participantId = parseInt(hash.replace('scoring-detail-', ''));
+            if (!isNaN(participantId)) {
+                // Ensure scoring data is calculated before showing detail
+                if (!this.dataManager.scoringData) {
+                    if (!this.dataManager.gcData) {
+                        await this.dataManager.loadGCData();
+                    }
+                    this.dataManager.calculateScoring();
+                }
+                this.showScoringDetailView(participantId);
+                return;
+            }
+        }
+        
+        // Check for participant detail fragments
+        if (hash.startsWith('participant-detail-')) {
+            const participantId = parseInt(hash.replace('participant-detail-', ''));
+            if (!isNaN(participantId)) {
+                await this.showDetailView(participantId);
+                return;
+            }
+        }
         
         switch (hash) {
             case 'participants':

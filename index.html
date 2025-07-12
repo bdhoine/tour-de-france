@@ -84,42 +84,52 @@
         </div>
 
         <div id="detailView" class="detail-view">
-            <button class="back-button" onclick="showMainView()">← Back to Participants</button>
+            <button class="back-button" onclick="window.location.hash = 'participants'">← Back to Participants</button>
             
             <div class="detail-header">
                 <h2 id="participantName"></h2>
             </div>
 
-            <div class="riders-grid">
-                <div class="riders-section">
-                    <h3>🏆 Main Riders</h3>
-                    <ul id="mainRiders" class="rider-list"></ul>
-                </div>
-                
-                <div class="riders-section reserve-riders">
-                    <h3>🔄 Reserve Riders</h3>
-                    <ul id="reserveRiders" class="rider-list"></ul>
+            <div class="riders-table-view">
+                <div class="table-container">
+                    <table id="participantRidersTable">
+                        <thead>
+                            <tr>
+                                <th>Position</th>
+                                <th>Rider</th>
+                                <th>Team</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="participantRidersBody">
+                            <tr><td colspan="4">Loading...</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
 
         <div id="scoringDetailView" class="scoring-detail-view">
-            <button class="back-button" onclick="showScoringView()">← Back to Scoring</button>
+            <button class="back-button" onclick="window.location.hash = 'scoring'">← Back to Scoring</button>
             
             <div class="scoring-detail-header">
                 <h2 id="scoringParticipantName"></h2>
                 <div class="scoring-summary">
-                    <div class="score-item">
-                        <span class="score-label">Total Points:</span>
-                        <span class="score-value" id="totalPoints"></span>
+                    <div class="score-card">
+                        <div class="score-card-content">
+                            <div class="score-main">
+                                <span class="score-value" id="totalPoints"></span>
+                                <span class="score-label">Total Points</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="score-item">
-                        <span class="score-label">Rank:</span>
-                        <span class="score-value" id="participantRank"></span>
-                    </div>
-                    <div class="score-item">
-                        <span class="score-label">Substitutes Used:</span>
-                        <span class="score-value" id="substitutesUsed"></span>
+                    <div class="score-card rank-card">
+                        <div class="score-card-content">
+                            <div class="score-main">
+                                <span class="score-value" id="participantRank"></span>
+                                <span class="score-label">Current Rank</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

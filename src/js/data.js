@@ -125,12 +125,11 @@ export class DataManager {
                     while (substituteIndex < substituteRiders.length && !substituteFound) {
                         const substituteRider = substituteRiders[substituteIndex];
                         
-                        if (substituteRider && allRaceRiders.has(substituteRider)) {
-                            // Found valid substitute who is in the race
+                        if (substituteRider && allRaceRiders.has(substituteRider) && !dnfRiders.has(substituteRider)) {
+                            // Found valid substitute who is in the race and didn't DNF
                             const substituteActualPos = actualPositions[substituteRider];
-                            const substitutePoints = substituteActualPos ? 
-                                predictionPos + substituteActualPos : // Use MAIN rider's prediction position + substitute's actual position
-                                predictionPos + dnfPenalty; // DNF penalty with main rider's position
+                            const substitutePredictionPos = 11 + substituteIndex; // Substitute's actual prediction position
+                            const substitutePoints = substitutePredictionPos + substituteActualPos;
 
                             detailedScores.push({
                                 prediction_pos: predictionPos,
@@ -144,11 +143,11 @@ export class DataManager {
                             });
 
                             detailedScores.push({
-                                prediction_pos: predictionPos, // Use the MAIN rider's position, not substitute position
+                                prediction_pos: substitutePredictionPos, // Use the substitute's actual prediction position
                                 rider: substituteRider,
-                                actual_pos: substituteActualPos || null,
+                                actual_pos: substituteActualPos,
                                 points: substitutePoints,
-                                dnf: dnfRiders.has(substituteRider), // Check if substitute DNF'd
+                                dnf: false, // This substitute finished
                                 is_substitute: true,
                                 replaces_position: predictionPos
                             });
@@ -157,7 +156,7 @@ export class DataManager {
                             substituteIndex++;
                             substituteFound = true;
                         } else {
-                            // This substitute also DNF or doesn't exist, try next one
+                            // This substitute DNF'd, doesn't exist, or not in race - try next one
                             substituteIndex++;
                         }
                     }
@@ -178,16 +177,15 @@ export class DataManager {
                     // Main rider started but DNF'd - try to find a substitute
                     let substituteFound = false;
                     
-                    // Look for available substitute that is in the race
+                    // Look for available substitute that didn't DNF
                     while (substituteIndex < substituteRiders.length && !substituteFound) {
                         const substituteRider = substituteRiders[substituteIndex];
                         
-                        if (substituteRider && allRaceRiders.has(substituteRider)) {
-                            // Found valid substitute
+                        if (substituteRider && allRaceRiders.has(substituteRider) && !dnfRiders.has(substituteRider)) {
+                            // Found valid substitute who is in the race and didn't DNF
                             const substituteActualPos = actualPositions[substituteRider];
-                            const substitutePoints = substituteActualPos ? 
-                                predictionPos + substituteActualPos : // Use main rider's prediction position + substitute's actual position
-                                predictionPos + dnfPenalty; // DNF penalty with main rider's position
+                            const substitutePredictionPos = 11 + substituteIndex; // Substitute's actual prediction position
+                            const substitutePoints = substitutePredictionPos + substituteActualPos;
 
                             detailedScores.push({
                                 prediction_pos: predictionPos,
@@ -200,11 +198,11 @@ export class DataManager {
                             });
 
                             detailedScores.push({
-                                prediction_pos: predictionPos, // Use the MAIN rider's position
+                                prediction_pos: substitutePredictionPos, // Use the substitute's actual prediction position
                                 rider: substituteRider,
-                                actual_pos: substituteActualPos || null,
+                                actual_pos: substituteActualPos,
                                 points: substitutePoints,
-                                dnf: dnfRiders.has(substituteRider),
+                                dnf: false, // This substitute finished
                                 is_substitute: true,
                                 replaces_position: predictionPos
                             });
@@ -213,7 +211,7 @@ export class DataManager {
                             substituteIndex++;
                             substituteFound = true;
                         } else {
-                            // This substitute also not available, try next one
+                            // This substitute DNF'd, doesn't exist, or not in race - try next one
                             substituteIndex++;
                         }
                     }
