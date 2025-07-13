@@ -59,6 +59,11 @@ async function fetchGCData() {
         // Transform the data to our gc-data.json format
         const gcData = transformEditionData(editionData);
         
+        // Validate that gc_standings is not empty
+        if (!gcData.gc_standings || gcData.gc_standings.length === 0) {
+            throw new Error('GC standings data is empty. This indicates the data extraction failed or the race has not started yet.');
+        }
+        
         // Write to public/gc-data.json
         const outputPath = join(__dirname, '..', 'public', 'gc-data.json');
         writeFileSync(outputPath, JSON.stringify(gcData, null, 2));
