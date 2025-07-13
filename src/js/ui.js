@@ -33,7 +33,8 @@ export class UIManager {
             substitutesUsed: document.getElementById('substitutesUsed'),
             detailedScoringBody: document.getElementById('detailedScoringBody'),
             participantTotalPoints: document.getElementById('participantTotalPoints'),
-            participantCurrentRank: document.getElementById('participantCurrentRank')
+            participantCurrentRank: document.getElementById('participantCurrentRank'),
+            lastUpdated: document.getElementById('lastUpdated')
         };
     }
 
@@ -87,6 +88,23 @@ export class UIManager {
         
         // Add jump to leavers functionality
         this.bindJumpToLeavers();
+    }
+
+    updateLastUpdatedDisplay() {
+        const lastUpdated = this.dataManager.getLastUpdated();
+        if (lastUpdated) {
+            const date = new Date(lastUpdated);
+            const day = date.getDate().toString().padStart(2, '0');
+            const month = (date.getMonth() + 1).toString().padStart(2, '0');
+            const year = date.getFullYear();
+            const hours = date.getHours().toString().padStart(2, '0');
+            const minutes = date.getMinutes().toString().padStart(2, '0');
+            
+            const formattedDate = `${day}/${month}/${year} @ ${hours}:${minutes}`;
+            this.elements.lastUpdated.textContent = `Last updated: ${formattedDate}`;
+        } else {
+            this.elements.lastUpdated.textContent = 'GC data not available';
+        }
     }
 
     displayParticipants(participants) {
@@ -315,6 +333,7 @@ export class UIManager {
             this.elements.gcSearchInput.value = '';
             this.displayGCStandings();
             this.displayAbandonedRiders();
+            this.updateLastUpdatedDisplay();
             
         } catch (error) {
             console.error('Error showing GC view:', error);
@@ -392,6 +411,7 @@ export class UIManager {
             // Clear search and display scoring data
             this.elements.scoringSearchInput.value = '';
             this.displayScoringResults();
+            this.updateLastUpdatedDisplay();
             
         } catch (error) {
             console.error('Error showing scoring view:', error);

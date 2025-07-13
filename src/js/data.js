@@ -62,6 +62,10 @@ export class DataManager {
         return this.gcData ? this.gcData.abandoned_riders : [];
     }
 
+    getLastUpdated() {
+        return this.gcData ? this.gcData.last_updated : null;
+    }
+
 
     getScoringResults() {
         return this.scoringData ? this.scoringData.scoring_results : [];
