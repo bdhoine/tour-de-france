@@ -568,7 +568,6 @@ tr:hover td {
 #participantRidersTable .dns-rider {
     background: transparent;
     color: var(--text-primary);
-    border: none;
 }
 
 /* Team text styling to match GC table */
