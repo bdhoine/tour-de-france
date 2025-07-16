@@ -8,7 +8,8 @@
       "Bash(npm run fix-oconnor:*)",
       "Bash(git add:*)",
       "Bash(node:*)",
-      "Bash(lsof:*)"
+      "Bash(lsof:*)",
+      "Bash(pkill:*)"
     ],
     "deny": []
   }

@@ -4,9 +4,9 @@ on:
   # Run manually
   workflow_dispatch:
   
-  # Run daily at 19:00 UTC
+  # Run daily at 17:00 UTC
   schedule:
-    - cron: '0 19 * * *'
+    - cron: '0 17 * * *'
 
 permissions:
   contents: write
