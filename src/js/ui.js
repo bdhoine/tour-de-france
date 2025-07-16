@@ -131,10 +131,15 @@ export class UIManager {
         // Sort the participants
         const sortedParticipants = this.sortParticipants(enhancedParticipants);
 
-        sortedParticipants.forEach(participant => {
+        sortedParticipants.forEach((participant, index) => {
             const row = document.createElement('tr');
+            
+            // Only show position for first participant in a tied group
+            const showPosition = index === 0 || participant.points !== sortedParticipants[index - 1].points || participant.points === '-';
+            const positionDisplay = showPosition ? participant.position : '';
+            
             row.innerHTML = `
-                <td class="position">${participant.position}</td>
+                <td class="position">${positionDisplay}</td>
                 <td class="participant-name">${participant.name}</td>
                 <td class="total-points">${participant.points}</td>
             `;
@@ -432,10 +437,15 @@ export class UIManager {
         // Sort the results
         const sortedResults = this.sortScoringResults([...results]);
 
-        sortedResults.forEach(result => {
+        sortedResults.forEach((result, index) => {
             const row = document.createElement('tr');
+            
+            // Only show rank for first participant in a tied group
+            const showRank = index === 0 || result.total_points !== sortedResults[index - 1].total_points;
+            const rankDisplay = showRank ? result.rank : '';
+            
             row.innerHTML = `
-                <td class="rank">${result.rank}</td>
+                <td class="rank">${rankDisplay}</td>
                 <td class="participant-name">${result.participant_name}</td>
                 <td class="total-points">${result.total_points}</td>
             `;

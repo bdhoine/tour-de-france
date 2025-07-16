@@ -270,9 +270,13 @@ export class DataManager {
         // Sort by total points (lowest wins)
         scoringResults.sort((a, b) => a.total_points - b.total_points);
 
-        // Add rankings
+        // Add rankings with tied position handling
+        let currentRank = 1;
         scoringResults.forEach((result, index) => {
-            result.rank = index + 1;
+            if (index > 0 && result.total_points !== scoringResults[index - 1].total_points) {
+                currentRank = index + 1;
+            }
+            result.rank = currentRank;
         });
 
         // Create scoring data structure
