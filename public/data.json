@@ -300,19 +300,19 @@
       "riders": [
         "Tadej Pogacar",
         "Jonas Vingegaard",
-        "Remco Evenepoel",
         "Joao Almeida",
         "Florian Lipowitz",
+        "Remco Evenepoel",
         "Matteo Jorgenson",
         "Felix Gall",
-        "Enric Mas",
-        "Carlos Rodriguez",
-        "Mattias Skjelmose",
         "Primoz Roglic",
-        "Tobias Halland Johannessen",
-        "Santiago Buitrago",
+        "Carlos Rodriguez",
+        "Enric Mas",
+        "Mattias Skjelmose",
         "Guillaume Martin-Guyonnet",
-        "Ben O'Connor"
+        "Santiago Buitrago",
+        "Ben O'Connor",
+        "Tobias Halland Johannessen"
       ]
     },
     {
@@ -560,11 +560,11 @@
         "Matteo Jorgenson",
         "Adam Yates",
         "Joao Almeida",
-        "Mathieu van der Poel",
-        "Phil Bauhaus",
-        "Ilan Van Wilder",
+        "Wout van Aert",
+        "Jasper Philipsen",
+        "Jonathan Milan",
         "Vito Braet",
-        "Ben Healy"
+        "Tiesj Benoot"
       ]
     },
     {
@@ -784,10 +784,10 @@
         "Remco Evenepoel",
         "Jonas Vingegaard",
         "Tadej Pogacar",
-        "Mathieu van der Poel",
+        "Wout van Aert",
         "Adam Yates",
         "Primoz Roglic",
-        "Ben Healy",
+        "Tiesj Benoot",
         "Carlos Rodriguez",
         "Enric Mas",
         "Joao Almeida",
@@ -1130,7 +1130,7 @@
         "Simon Yates",
         "Adam Yates",
         "Enric Mas",
-        "SEIXAS",
+        "Paul Seixas",
         "Kévin Vauquelin"
       ]
     },
@@ -1371,7 +1371,7 @@
       "riders": [
         "Tadej Pogacar",
         "Jonas Vingegaard",
-        "Enric Mas",
+        "Geraint Thomas",
         "Remco Evenepoel",
         "Carlos Rodriguez",
         "Alexey Lutsenko",
