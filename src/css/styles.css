@@ -877,6 +877,14 @@ tr:hover td {
     font-weight: 500;
 }
 
+.gc-standings .team-subtitle {
+    color: #aaaaaa;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
+    line-height: 1.2;
+}
+
 .gc-standings .time {
     font-weight: 500;
     text-align: right;
