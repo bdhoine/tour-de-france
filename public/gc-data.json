@@ -81,7 +81,7 @@
       "position": 13,
       "rider": "Jordan Jegat",
       "team": "Team TotalEnergies",
-      "time": "+ 18.00"
+      "time": "+ 18.10"
     },
     {
       "position": 14,
@@ -565,14 +565,14 @@
     },
     {
       "position": 94,
-      "rider": "Dylan Teuns",
-      "team": "Cofidis",
+      "rider": "Toms Skujins",
+      "team": "Lidl-Trek",
       "time": "+ 01:44.40"
     },
     {
       "position": 95,
-      "rider": "Toms Skujins",
-      "team": "Lidl-Trek",
+      "rider": "Dylan Teuns",
+      "team": "Cofidis",
       "time": "+ 01:44.40"
     },
     {
@@ -1034,18 +1034,6 @@
   ],
   "abandoned_riders": [
     {
-      "rider": "Emilien Jeannière",
-      "team": "Team TotalEnergies",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Mattia Cattaneo",
-      "team": "Soudal Quick-Step",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
       "rider": "Stefan Bissegger",
       "team": "Decathlon AG2R La Mondiale Team",
       "stage": "Unknown",
@@ -1070,14 +1058,14 @@
       "reason": "Abandoned"
     },
     {
-      "rider": "Jack Haig",
-      "team": "Bahrain Victorious",
+      "rider": "Filippo Ganna",
+      "team": "INEOS Grenadiers",
       "stage": "Unknown",
       "reason": "Abandoned"
     },
     {
-      "rider": "Filippo Ganna",
-      "team": "INEOS Grenadiers",
+      "rider": "Jack Haig",
+      "team": "Bahrain Victorious",
       "stage": "Unknown",
       "reason": "Abandoned"
     },
@@ -1110,9 +1098,21 @@
       "team": "XDS Astana Team",
       "stage": "Unknown",
       "reason": "Abandoned"
+    },
+    {
+      "rider": "Emilien Jeannière",
+      "team": "Team TotalEnergies",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Mattia Cattaneo",
+      "team": "Soudal Quick-Step",
+      "stage": "Unknown",
+      "reason": "Abandoned"
     }
   ],
-  "last_updated": "2025-07-17T16:38:57.031Z",
+  "last_updated": "2025-07-17T17:14:32.397Z",
   "source": "Domestique Cycling",
   "data_structure_version": "1.0"
 }
