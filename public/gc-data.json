@@ -141,7 +141,7 @@
       "position": 23,
       "rider": "Valentin Madouas",
       "team": "Groupama-FDJ",
-      "time": "+ 59.57"
+      "time": "+ 59.47"
     },
     {
       "position": 24,
@@ -201,7 +201,7 @@
       "position": 33,
       "rider": "Ilan Van Wilder",
       "team": "Soudal Quick-Step",
-      "time": "+ 01:25.24"
+      "time": "+ 01:25.23"
     },
     {
       "position": 34,
@@ -657,7 +657,7 @@
       "position": 109,
       "rider": "Iván Romeo",
       "team": "Movistar Team",
-      "time": "+ 02:41.57"
+      "time": "+ 02:42.07"
     },
     {
       "position": 110,
@@ -1010,6 +1010,42 @@
   ],
   "abandoned_riders": [
     {
+      "rider": "Edward Dunbar",
+      "team": "Team Jayco-AlUla",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Steff Cras",
+      "team": "Team TotalEnergies",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Bryan Coquard",
+      "team": "Cofidis",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Søren Wærenskjold",
+      "team": "Uno-X Mobility",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Mattias Skjelmose",
+      "team": "Lidl-Trek",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Cees Bol",
+      "team": "XDS Astana Team",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
       "rider": "Emilien Jeannière",
       "team": "Team TotalEnergies",
       "stage": "Unknown",
@@ -1052,14 +1088,14 @@
       "reason": "Abandoned"
     },
     {
-      "rider": "Jack Haig",
-      "team": "Bahrain Victorious",
+      "rider": "Filippo Ganna",
+      "team": "INEOS Grenadiers",
       "stage": "Unknown",
       "reason": "Abandoned"
     },
     {
-      "rider": "Filippo Ganna",
-      "team": "INEOS Grenadiers",
+      "rider": "Jack Haig",
+      "team": "Bahrain Victorious",
       "stage": "Unknown",
       "reason": "Abandoned"
     },
@@ -1074,45 +1110,9 @@
       "team": "UAE Team Emirates-XRG",
       "stage": "Unknown",
       "reason": "Abandoned"
-    },
-    {
-      "rider": "Steff Cras",
-      "team": "Team TotalEnergies",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Bryan Coquard",
-      "team": "Cofidis",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Edward Dunbar",
-      "team": "Team Jayco-AlUla",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Søren Wærenskjold",
-      "team": "Uno-X Mobility",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Mattias Skjelmose",
-      "team": "Lidl-Trek",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Cees Bol",
-      "team": "XDS Astana Team",
-      "stage": "Unknown",
-      "reason": "Abandoned"
     }
   ],
-  "last_updated": "2025-07-19T16:05:58.616Z",
+  "last_updated": "2025-07-19T17:13:12.978Z",
   "source": "Domestique Cycling",
   "data_structure_version": "1.0"
 }
