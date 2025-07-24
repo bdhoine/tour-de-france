@@ -66,12 +66,6 @@
       "time": "+ 29.19"
     },
     {
-      "position": 10,
-      "rider": "Carlos Rodriguez",
-      "team": "INEOS Grenadiers",
-      "time": "+ 04:45.41"
-    },
-    {
       "position": 11,
       "rider": "Jordan Jegat",
       "team": "Team TotalEnergies",
@@ -112,12 +106,6 @@
       "rider": "Matteo Jorgenson",
       "team": "Team Visma | Lease a Bike",
       "time": "+ 01:13.01"
-    },
-    {
-      "position": 18,
-      "rider": "Enric Mas",
-      "team": "Movistar Team",
-      "time": "+ 04:12.42"
     },
     {
       "position": 18,
@@ -175,882 +163,816 @@
     },
     {
       "position": 27,
-      "rider": "Raúl García",
-      "team": "ARKEA-B&B HOTELS",
-      "time": "+ 02:04.05"
-    },
-    {
-      "position": 27,
-      "rider": "Callum Scotson",
-      "team": "Decathlon AG2R La Mondiale Team",
-      "time": "+ 03:42.41"
-    },
-    {
-      "position": 28,
       "rider": "Emanuel Buchmann",
       "team": "Cofidis",
-      "time": "+ 03:41.00"
+      "time": "+ 01:59.07"
     },
     {
       "position": 28,
-      "rider": "Marc Soler",
-      "team": "UAE Team Emirates-XRG",
-      "time": "+ 02:06.53"
+      "rider": "Callum Scotson",
+      "team": "Decathlon AG2R La Mondiale Team",
+      "time": "+ 01:59.54"
     },
     {
       "position": 29,
       "rider": "Ilan Van Wilder",
       "team": "Soudal Quick-Step",
-      "time": "+ 03:40.59"
+      "time": "+ 02:00.10"
     },
     {
-      "position": 29,
+      "position": 30,
+      "rider": "Raúl García",
+      "team": "ARKEA-B&B HOTELS",
+      "time": "+ 02:04.05"
+    },
+    {
+      "position": 31,
+      "rider": "Marc Soler",
+      "team": "UAE Team Emirates-XRG",
+      "time": "+ 02:06.53"
+    },
+    {
+      "position": 32,
       "rider": "Santiago Buitrago",
       "team": "Bahrain Victorious",
       "time": "+ 02:07.08"
     },
     {
-      "position": 30,
+      "position": 33,
+      "rider": "Aurélien Paret-Peintre",
+      "team": "Decathlon AG2R La Mondiale Team",
+      "time": "+ 02:07.32"
+    },
+    {
+      "position": 34,
+      "rider": "Romain Grégoire",
+      "team": "Groupama-FDJ",
+      "time": "+ 02:08.31"
+    },
+    {
+      "position": 35,
       "rider": "Clément Berthet",
       "team": "Decathlon AG2R La Mondiale Team",
       "time": "+ 02:11.07"
     },
     {
-      "position": 31,
+      "position": 36,
       "rider": "Einer Rubio",
       "team": "Movistar Team",
       "time": "+ 02:12.19"
     },
     {
-      "position": 32,
+      "position": 37,
       "rider": "Harry Sweeny",
       "team": "EF Education-EasyPost",
       "time": "+ 02:18.59"
     },
     {
-      "position": 32,
-      "rider": "Romain Grégoire",
+      "position": 38,
+      "rider": "Quentin Pacher",
       "team": "Groupama-FDJ",
-      "time": "+ 03:34.55"
+      "time": "+ 02:22.54"
     },
     {
-      "position": 33,
+      "position": 39,
       "rider": "Alex Baudin",
       "team": "EF Education-EasyPost",
       "time": "+ 02:27.35"
     },
     {
-      "position": 34,
-      "rider": "Aurélien Paret-Peintre",
-      "team": "Decathlon AG2R La Mondiale Team",
-      "time": "+ 03:33.33"
+      "position": 40,
+      "rider": "Tim Wellens",
+      "team": "UAE Team Emirates-XRG",
+      "time": "+ 02:28.04"
     },
     {
-      "position": 34,
+      "position": 41,
       "rider": "Michael Storer",
       "team": "Tudor Pro Cycling Team",
       "time": "+ 02:28.24"
     },
     {
-      "position": 35,
+      "position": 42,
+      "rider": "Julian Alaphilippe",
+      "team": "Tudor Pro Cycling Team",
+      "time": "+ 02:28.28"
+    },
+    {
+      "position": 43,
+      "rider": "Joe Blackmore",
+      "team": "Israel-Premier Tech",
+      "time": "+ 02:29.30"
+    },
+    {
+      "position": 44,
+      "rider": "Clément Venturini",
+      "team": "ARKEA-B&B HOTELS",
+      "time": "+ 02:30.12"
+    },
+    {
+      "position": 45,
       "rider": "Tiesj Benoot",
       "team": "Team Visma | Lease a Bike",
       "time": "+ 02:31.39"
     },
     {
-      "position": 36,
+      "position": 46,
+      "rider": "Simone Velasco",
+      "team": "XDS Astana Team",
+      "time": "+ 02:32.06"
+    },
+    {
+      "position": 47,
+      "rider": "Harold Tejada",
+      "team": "XDS Astana Team",
+      "time": "+ 02:32.33"
+    },
+    {
+      "position": 48,
       "rider": "Geraint Thomas",
       "team": "INEOS Grenadiers",
       "time": "+ 02:37.17"
     },
     {
-      "position": 37,
-      "rider": "Quentin Pacher",
-      "team": "Groupama-FDJ",
-      "time": "+ 03:17.58"
+      "position": 49,
+      "rider": "Pascal Eenkhoorn",
+      "team": "Soudal Quick-Step",
+      "time": "+ 02:37.54"
     },
     {
-      "position": 37,
+      "position": 50,
       "rider": "Quinn Simmons",
       "team": "Lidl-Trek",
       "time": "+ 02:38.52"
     },
     {
-      "position": 38,
-      "rider": "Julian Alaphilippe",
-      "team": "Tudor Pro Cycling Team",
-      "time": "+ 03:15.06"
-    },
-    {
-      "position": 38,
-      "rider": "Bruno Armirail",
-      "team": "Decathlon AG2R La Mondiale Team",
-      "time": "+ 02:43.50"
-    },
-    {
-      "position": 39,
-      "rider": "Axel Laurance",
-      "team": "INEOS Grenadiers",
-      "time": "+ 02:44.09"
-    },
-    {
-      "position": 40,
-      "rider": "Simone Velasco",
-      "team": "XDS Astana Team",
-      "time": "+ 03:13.44"
-    },
-    {
-      "position": 40,
-      "rider": "Ewen Costiou",
-      "team": "ARKEA-B&B HOTELS",
-      "time": "+ 02:57.54"
-    },
-    {
-      "position": 41,
-      "rider": "Mathis Le Berre",
-      "team": "ARKEA-B&B HOTELS",
-      "time": "+ 03:03.01"
-    },
-    {
-      "position": 41,
-      "rider": "Tim Wellens",
-      "team": "UAE Team Emirates-XRG",
-      "time": "+ 03:13.36"
-    },
-    {
-      "position": 42,
-      "rider": "Alexey Lutsenko",
-      "team": "Israel-Premier Tech",
-      "time": "+ 03:08.33"
-    },
-    {
-      "position": 42,
-      "rider": "Joe Blackmore",
-      "team": "Israel-Premier Tech",
-      "time": "+ 03:11.15"
-    },
-    {
-      "position": 43,
-      "rider": "Pavel Sivakov",
-      "team": "UAE Team Emirates-XRG",
-      "time": "+ 03:09.07"
-    },
-    {
-      "position": 43,
-      "rider": "Clément Venturini",
-      "team": "ARKEA-B&B HOTELS",
-      "time": "+ 03:10.57"
-    },
-    {
-      "position": 44,
-      "rider": "Marc Hirschi",
-      "team": "Tudor Pro Cycling Team",
-      "time": "+ 03:25.33"
-    },
-    {
-      "position": 44,
-      "rider": "Harold Tejada",
-      "team": "XDS Astana Team",
-      "time": "+ 03:08.07"
-    },
-    {
-      "position": 45,
-      "rider": "Anders Halland Johannessen",
-      "team": "Uno-X Mobility",
-      "time": "+ 03:27.20"
-    },
-    {
-      "position": 45,
-      "rider": "Pascal Eenkhoorn",
-      "team": "Soudal Quick-Step",
-      "time": "+ 03:07.54"
-    },
-    {
-      "position": 50,
+      "position": 51,
       "rider": "Mathieu Burgaudeau",
       "team": "Team TotalEnergies",
-      "time": "+ 02:60.59"
+      "time": "+ 02:41.06"
     },
     {
-      "position": 51,
+      "position": 52,
       "rider": "Valentin Paret-Peintre",
       "team": "Soudal Quick-Step",
-      "time": "+ 02:59.49"
+      "time": "+ 02:43.16"
     },
     {
       "position": 53,
       "rider": "Michael Woods",
       "team": "Israel-Premier Tech",
-      "time": "+ 02:58.42"
+      "time": "+ 02:43.32"
+    },
+    {
+      "position": 54,
+      "rider": "Neilson Powless",
+      "team": "EF Education-EasyPost",
+      "time": "+ 02:43.37"
+    },
+    {
+      "position": 55,
+      "rider": "Bruno Armirail",
+      "team": "Decathlon AG2R La Mondiale Team",
+      "time": "+ 02:43.50"
+    },
+    {
+      "position": 56,
+      "rider": "Frank van den Broek",
+      "team": "Team Picnic PostNL",
+      "time": "+ 02:43.58"
+    },
+    {
+      "position": 57,
+      "rider": "Axel Laurance",
+      "team": "INEOS Grenadiers",
+      "time": "+ 02:48.31"
     },
     {
       "position": 58,
       "rider": "Alexandre Delettre",
       "team": "Team TotalEnergies",
-      "time": "+ 02:52.50"
+      "time": "+ 02:49.01"
     },
     {
       "position": 59,
-      "rider": "Markus Hoelgaard",
+      "rider": "Andreas Leknessund",
       "team": "Uno-X Mobility",
-      "time": "+ 02:49.05"
+      "time": "+ 02:56.02"
+    },
+    {
+      "position": 60,
+      "rider": "Emiel Verstrynge",
+      "team": "Alpecin-Deceuninck",
+      "time": "+ 02:56.41"
     },
     {
       "position": 61,
-      "rider": "Andreas Leknessund",
+      "rider": "Markus Hoelgaard",
       "team": "Uno-X Mobility",
-      "time": "+ 02:46.20"
+      "time": "+ 02:56.55"
     },
     {
       "position": 62,
-      "rider": "Jasper Stuyven",
-      "team": "Lidl-Trek",
-      "time": "+ 02:44.53"
+      "rider": "Ewen Costiou",
+      "team": "ARKEA-B&B HOTELS",
+      "time": "+ 02:57.54"
+    },
+    {
+      "position": 63,
+      "rider": "Thomas Gachignard",
+      "team": "Team TotalEnergies",
+      "time": "+ 03:00.47"
     },
     {
       "position": 64,
-      "rider": "Emiel Verstrynge",
-      "team": "Alpecin-Deceuninck",
-      "time": "+ 02:44.28"
+      "rider": "Jasper Stuyven",
+      "team": "Lidl-Trek",
+      "time": "+ 03:02.25"
     },
     {
       "position": 65,
-      "rider": "Thomas Gachignard",
-      "team": "Team TotalEnergies",
-      "time": "+ 02:43.37"
+      "rider": "Mathis Le Berre",
+      "team": "ARKEA-B&B HOTELS",
+      "time": "+ 03:03.01"
     },
     {
       "position": 66,
+      "rider": "Nelson Oliveira",
+      "team": "Movistar Team",
+      "time": "+ 03:03.13"
+    },
+    {
+      "position": 67,
       "rider": "Wout van Aert",
       "team": "Team Visma | Lease a Bike",
-      "time": "+ 02:39.07"
+      "time": "+ 03:04.32"
     },
     {
       "position": 68,
-      "rider": "Nelson Oliveira",
-      "team": "Movistar Team",
-      "time": "+ 02:37.21"
+      "rider": "Max Schachmann",
+      "team": "Soudal Quick-Step",
+      "time": "+ 03:06.21"
     },
     {
       "position": 69,
-      "rider": "Max Schachmann",
-      "team": "Soudal Quick-Step",
-      "time": "+ 02:35.44"
+      "rider": "Michael Valgren",
+      "team": "EF Education-EasyPost",
+      "time": "+ 03:06.23"
+    },
+    {
+      "position": 70,
+      "rider": "Clément Champoussin",
+      "team": "XDS Astana Team",
+      "time": "+ 03:07.22"
     },
     {
       "position": 71,
-      "rider": "Clément Champoussin",
-      "team": "XDS Astana Team",
-      "time": "+ 02:34.29"
+      "rider": "Alexey Lutsenko",
+      "team": "Israel-Premier Tech",
+      "time": "+ 03:08.33"
     },
     {
       "position": 72,
-      "rider": "Michael Valgren",
-      "team": "EF Education-EasyPost",
-      "time": "+ 02:34.29"
+      "rider": "Pavel Sivakov",
+      "team": "UAE Team Emirates-XRG",
+      "time": "+ 03:09.07"
     },
     {
       "position": 73,
-      "rider": "Jenno Berckmoes",
-      "team": "Lotto",
-      "time": "+ 02:33.08"
+      "rider": "Ion Izagirre",
+      "team": "Cofidis",
+      "time": "+ 03:10.38"
     },
     {
       "position": 74,
-      "rider": "Alex Aranburu",
-      "team": "Cofidis",
-      "time": "+ 02:32.34"
+      "rider": "Jenno Berckmoes",
+      "team": "Lotto",
+      "time": "+ 03:10.45"
     },
     {
       "position": 75,
-      "rider": "Ion Izagirre",
+      "rider": "Alex Aranburu",
       "team": "Cofidis",
-      "time": "+ 02:31.27"
+      "time": "+ 03:13.42"
+    },
+    {
+      "position": 76,
+      "rider": "Jonas Abrahamsen",
+      "team": "Uno-X Mobility",
+      "time": "+ 03:13.54"
+    },
+    {
+      "position": 77,
+      "rider": "Oliver Naesen",
+      "team": "Decathlon AG2R La Mondiale Team",
+      "time": "+ 03:17.01"
     },
     {
       "position": 78,
-      "rider": "Cyril Barthe",
-      "team": "Groupama-FDJ",
-      "time": "+ 02:28.22"
+      "rider": "Brent Van Moer",
+      "team": "Lotto",
+      "time": "+ 03:18.26"
     },
     {
       "position": 79,
       "rider": "Krists Neilands",
       "team": "Israel-Premier Tech",
-      "time": "+ 02:28.14"
+      "time": "+ 03:18.38"
     },
     {
       "position": 80,
-      "rider": "Jonas Abrahamsen",
-      "team": "Uno-X Mobility",
-      "time": "+ 02:27.00"
+      "rider": "Tobias Foss",
+      "team": "INEOS Grenadiers",
+      "time": "+ 03:19.24"
     },
     {
       "position": 81,
-      "rider": "Brent Van Moer",
-      "team": "Lotto",
-      "time": "+ 02:25.42"
+      "rider": "Nils Politt",
+      "team": "UAE Team Emirates-XRG",
+      "time": "+ 03:22.18"
     },
     {
       "position": 82,
-      "rider": "Oliver Naesen",
-      "team": "Decathlon AG2R La Mondiale Team",
-      "time": "+ 02:24.53"
+      "rider": "Louis Barré",
+      "team": "Intermarché-Wanty",
+      "time": "+ 03:22.54"
     },
     {
       "position": 83,
-      "rider": "Marius Mayrhofer",
-      "team": "Tudor Pro Cycling Team",
-      "time": "+ 02:22.29"
+      "rider": "Mike Teunissen",
+      "team": "XDS Astana Team",
+      "time": "+ 03:22.56"
     },
     {
       "position": 84,
-      "rider": "Mike Teunissen",
-      "team": "XDS Astana Team",
-      "time": "+ 02:19.36"
+      "rider": "Marius Mayrhofer",
+      "team": "Tudor Pro Cycling Team",
+      "time": "+ 03:23.44"
     },
     {
       "position": 85,
-      "rider": "Tobias Foss",
-      "team": "INEOS Grenadiers",
-      "time": "+ 02:18.00"
+      "rider": "Bastien Tronchon",
+      "team": "Decathlon AG2R La Mondiale Team",
+      "time": "+ 03:24.09"
     },
     {
       "position": 86,
-      "rider": "Nils Politt",
-      "team": "UAE Team Emirates-XRG",
-      "time": "+ 02:18.49"
+      "rider": "Marco Haller",
+      "team": "Tudor Pro Cycling Team",
+      "time": "+ 03:25.12"
     },
     {
       "position": 87,
-      "rider": "Marco Haller",
+      "rider": "Marc Hirschi",
       "team": "Tudor Pro Cycling Team",
-      "time": "+ 02:18.12"
+      "time": "+ 03:25.33"
     },
     {
       "position": 88,
-      "rider": "Louis Barré",
-      "team": "Intermarché-Wanty",
-      "time": "+ 02:17.46"
+      "rider": "Anders Halland Johannessen",
+      "team": "Uno-X Mobility",
+      "time": "+ 03:27.20"
     },
     {
       "position": 89,
-      "rider": "Bastien Tronchon",
-      "team": "Decathlon AG2R La Mondiale Team",
-      "time": "+ 02:16.31"
+      "rider": "Clément Russo",
+      "team": "Groupama-FDJ",
+      "time": "+ 03:27.44"
     },
     {
       "position": 90,
       "rider": "Kasper Asgreen",
       "team": "EF Education-EasyPost",
-      "time": "+ 02:15.40"
+      "time": "+ 03:30.36"
     },
     {
       "position": 91,
       "rider": "Laurence Pithie",
       "team": "Red Bull-BORA-hansgrohe",
-      "time": "+ 02:15.12"
+      "time": "+ 03:31.04"
     },
     {
       "position": 92,
-      "rider": "Toms Skujins",
-      "team": "Lidl-Trek",
-      "time": "+ 02:13.08"
+      "rider": "Dylan Teuns",
+      "team": "Cofidis",
+      "time": "+ 03:33.21"
     },
     {
       "position": 93,
-      "rider": "Clément Russo",
-      "team": "Groupama-FDJ",
-      "time": "+ 02:13.08"
+      "rider": "Toms Skujins",
+      "team": "Lidl-Trek",
+      "time": "+ 03:34.16"
     },
     {
       "position": 94,
-      "rider": "Dylan Teuns",
+      "rider": "Damien Touzé",
       "team": "Cofidis",
-      "time": "+ 02:12.44"
+      "time": "+ 03:34.22"
+    },
+    {
+      "position": 95,
+      "rider": "Jonas Rickaert",
+      "team": "Alpecin-Deceuninck",
+      "time": "+ 03:34.32"
     },
     {
       "position": 96,
-      "rider": "Damien Touzé",
-      "team": "Cofidis",
-      "time": "+ 02:11.38"
+      "rider": "Kaden Groves",
+      "team": "Alpecin-Deceuninck",
+      "time": "+ 03:36.57"
     },
     {
       "position": 97,
-      "rider": "Lenny Martinez",
-      "team": "Bahrain Victorious",
-      "time": "+ 02:08.56"
+      "rider": "Tobias Lund Andresen",
+      "team": "Team Picnic PostNL",
+      "time": "+ 03:38.11"
     },
     {
       "position": 98,
-      "rider": "Tobias Lund Andresen",
-      "team": "Team Picnic PostNL",
-      "time": "+ 02:08.43"
+      "rider": "Gianni Vermeersch",
+      "team": "Alpecin-Deceuninck",
+      "time": "+ 03:38.17"
     },
     {
       "position": 99,
-      "rider": "Jonas Rickaert",
-      "team": "Alpecin-Deceuninck",
-      "time": "+ 02:07.22"
+      "rider": "Lenny Martinez",
+      "team": "Bahrain Victorious",
+      "time": "+ 03:38.48"
     },
     {
       "position": 100,
       "rider": "Fred Wright",
       "team": "Bahrain Victorious",
-      "time": "+ 02:07.06"
+      "time": "+ 03:38.59"
     },
     {
       "position": 101,
-      "rider": "Kaden Groves",
-      "team": "Alpecin-Deceuninck",
-      "time": "+ 02:06.42"
+      "rider": "William Barta",
+      "team": "Movistar Team",
+      "time": "+ 03:42.27"
+    },
+    {
+      "position": 102,
+      "rider": "Matis Louvel",
+      "team": "Israel-Premier Tech",
+      "time": "+ 03:43.40"
     },
     {
       "position": 103,
-      "rider": "Gianni Vermeersch",
-      "team": "Alpecin-Deceuninck",
-      "time": "+ 02:03.37"
+      "rider": "Mauro Schmid",
+      "team": "Team Jayco-AlUla",
+      "time": "+ 03:45.20"
     },
     {
       "position": 104,
-      "rider": "William Barta",
-      "team": "Movistar Team",
-      "time": "+ 02:03.07"
+      "rider": "Gianni Moscon",
+      "team": "Red Bull-BORA-hansgrohe",
+      "time": "+ 03:45.54"
     },
     {
       "position": 105,
-      "rider": "Gianni Moscon",
-      "team": "Red Bull-BORA-hansgrohe",
-      "time": "+ 01:60.22"
+      "rider": "Matteo Trentin",
+      "team": "Tudor Pro Cycling Team",
+      "time": "+ 03:48.54"
     },
     {
       "position": 106,
-      "rider": "Matis Louvel",
-      "team": "Israel-Premier Tech",
-      "time": "+ 01:59.32"
+      "rider": "Iván Romeo",
+      "team": "Movistar Team",
+      "time": "+ 03:49.40"
     },
     {
       "position": 107,
-      "rider": "Matteo Trentin",
-      "team": "Tudor Pro Cycling Team",
-      "time": "+ 01:57.32"
+      "rider": "Connor Swift",
+      "team": "INEOS Grenadiers",
+      "time": "+ 03:55.18"
     },
     {
       "position": 108,
-      "rider": "Mauro Schmid",
-      "team": "Team Jayco-AlUla",
-      "time": "+ 01:57.15"
+      "rider": "Niklas Märkl",
+      "team": "Team Picnic PostNL",
+      "time": "+ 03:55.58"
     },
     {
       "position": 109,
-      "rider": "Iván Romeo",
-      "team": "Movistar Team",
-      "time": "+ 01:56.36"
+      "rider": "Vincenzo Albanese",
+      "team": "EF Education-EasyPost",
+      "time": "+ 03:57.55"
     },
     {
       "position": 110,
-      "rider": "Niklas Märkl",
-      "team": "Team Picnic PostNL",
-      "time": "+ 01:49.42"
+      "rider": "Pablo Castrillo",
+      "team": "Movistar Team",
+      "time": "+ 03:58.42"
     },
     {
       "position": 111,
-      "rider": "Vincenzo Albanese",
-      "team": "EF Education-EasyPost",
-      "time": "+ 01:49.29"
+      "rider": "Paul Penhoët",
+      "team": "Groupama-FDJ",
+      "time": "+ 04:02.05"
     },
     {
       "position": 112,
-      "rider": "Connor Swift",
-      "team": "INEOS Grenadiers",
-      "time": "+ 01:48.50"
+      "rider": "Anthony Turgis",
+      "team": "Team TotalEnergies",
+      "time": "+ 04:02.37"
     },
     {
       "position": 113,
-      "rider": "Pablo Castrillo",
-      "team": "Movistar Team",
-      "time": "+ 01:47.34"
+      "rider": "Thibau Nys",
+      "team": "Lidl-Trek",
+      "time": "+ 04:05.39"
     },
     {
       "position": 114,
-      "rider": "Paul Penhoët",
-      "team": "Groupama-FDJ",
-      "time": "+ 01:43.45"
+      "rider": "Iván García Cortina",
+      "team": "Movistar Team",
+      "time": "+ 04:09.13"
     },
     {
       "position": 115,
-      "rider": "Anthony Turgis",
-      "team": "Team TotalEnergies",
-      "time": "+ 01:43.23"
+      "rider": "Edoardo Affini",
+      "team": "Team Visma | Lease a Bike",
+      "time": "+ 04:10.06"
     },
     {
       "position": 116,
-      "rider": "Thibau Nys",
-      "team": "Lidl-Trek",
-      "time": "+ 01:41.39"
+      "rider": "Eduardo Sepulveda",
+      "team": "Lotto",
+      "time": "+ 04:11.35"
     },
     {
       "position": 117,
-      "rider": "Iván García Cortina",
-      "team": "Movistar Team",
-      "time": "+ 01:37.03"
+      "rider": "Alberto Dainese",
+      "team": "Tudor Pro Cycling Team",
+      "time": "+ 04:11.44"
     },
     {
       "position": 118,
-      "rider": "Edoardo Affini",
-      "team": "Team Visma | Lease a Bike",
-      "time": "+ 01:36.05"
+      "rider": "Robert Stannard",
+      "team": "Bahrain Victorious",
+      "time": "+ 04:12.19"
     },
     {
       "position": 119,
-      "rider": "Alberto Dainese",
-      "team": "Tudor Pro Cycling Team",
-      "time": "+ 01:35.37"
+      "rider": "Jake Stewart",
+      "team": "Israel-Premier Tech",
+      "time": "+ 04:12.46"
     },
     {
       "position": 120,
-      "rider": "Eduardo Sepulveda",
-      "team": "Lotto",
-      "time": "+ 01:34.54"
+      "rider": "Matej Mohoric",
+      "team": "Bahrain Victorious",
+      "time": "+ 04:17.49"
     },
     {
       "position": 121,
-      "rider": "Jake Stewart",
-      "team": "Israel-Premier Tech",
-      "time": "+ 01:34.08"
+      "rider": "Mick van Dijke",
+      "team": "Red Bull-BORA-hansgrohe",
+      "time": "+ 04:18.10"
     },
     {
       "position": 122,
-      "rider": "Robert Stannard",
-      "team": "Bahrain Victorious",
-      "time": "+ 01:33.52"
+      "rider": "Lucas Plapp",
+      "team": "Team Jayco-AlUla",
+      "time": "+ 04:18.22"
     },
     {
       "position": 123,
-      "rider": "Matej Mohoric",
-      "team": "Bahrain Victorious",
-      "time": "+ 01:31.11"
+      "rider": "Pascal Ackermann",
+      "team": "Israel-Premier Tech",
+      "time": "+ 04:19.32"
     },
     {
       "position": 124,
-      "rider": "Mick van Dijke",
-      "team": "Red Bull-BORA-hansgrohe",
-      "time": "+ 01:28.03"
+      "rider": "Sam Watson",
+      "team": "INEOS Grenadiers",
+      "time": "+ 04:21.34"
     },
     {
       "position": 125,
-      "rider": "Pascal Ackermann",
-      "team": "Israel-Premier Tech",
-      "time": "+ 01:26.08"
+      "rider": "Jonas Rutsch",
+      "team": "Intermarché-Wanty",
+      "time": "+ 04:23.32"
     },
     {
       "position": 126,
-      "rider": "Lucas Plapp",
-      "team": "Team Jayco-AlUla",
-      "time": "+ 01:24.50"
+      "rider": "Silvan Dillier",
+      "team": "Alpecin-Deceuninck",
+      "time": "+ 04:23.47"
     },
     {
       "position": 127,
-      "rider": "Sam Watson",
-      "team": "INEOS Grenadiers",
-      "time": "+ 01:24.31"
+      "rider": "Tim Naberman",
+      "team": "Team Picnic PostNL",
+      "time": "+ 04:23.53"
     },
     {
       "position": 128,
-      "rider": "Tim Naberman",
-      "team": "Team Picnic PostNL",
-      "time": "+ 01:23.19"
+      "rider": "Magnus Cort",
+      "team": "Uno-X Mobility",
+      "time": "+ 04:26.34"
     },
     {
       "position": 129,
-      "rider": "Magnus Cort",
-      "team": "Uno-X Mobility",
-      "time": "+ 01:21.31"
+      "rider": "Pavel Bittner",
+      "team": "Team Picnic PostNL",
+      "time": "+ 04:27.19"
     },
     {
       "position": 130,
-      "rider": "Pavel Bittner",
+      "rider": "Sean Flynn",
       "team": "Team Picnic PostNL",
-      "time": "+ 01:19.53"
+      "time": "+ 04:27.48"
     },
     {
       "position": 131,
-      "rider": "Jonas Rutsch",
-      "team": "Intermarché-Wanty",
-      "time": "+ 01:19.51"
+      "rider": "Mattéo Vercher",
+      "team": "Team TotalEnergies",
+      "time": "+ 04:28.01"
     },
     {
       "position": 132,
-      "rider": "Sean Flynn",
-      "team": "Team Picnic PostNL",
-      "time": "+ 01:19.04"
+      "rider": "Biniam Girmay",
+      "team": "Intermarché-Wanty",
+      "time": "+ 04:29.16"
     },
     {
       "position": 133,
-      "rider": "Biniam Girmay",
-      "team": "Intermarché-Wanty",
-      "time": "+ 01:18.08"
+      "rider": "Amaury Capiot",
+      "team": "ARKEA-B&B HOTELS",
+      "time": "+ 04:31.27"
     },
     {
       "position": 134,
-      "rider": "Silvan Dillier",
-      "team": "Alpecin-Deceuninck",
-      "time": "+ 01:17.20"
+      "rider": "Luke Durbridge",
+      "team": "Team Jayco-AlUla",
+      "time": "+ 04:32.02"
     },
     {
       "position": 135,
-      "rider": "Amaury Capiot",
-      "team": "ARKEA-B&B HOTELS",
-      "time": "+ 01:15.35"
+      "rider": "Lewis Askey",
+      "team": "Groupama-FDJ",
+      "time": "+ 04:34.53"
     },
     {
       "position": 136,
-      "rider": "Luke Durbridge",
-      "team": "Team Jayco-AlUla",
-      "time": "+ 01:14.00"
+      "rider": "Jarrad Drizners",
+      "team": "Lotto",
+      "time": "+ 04:35.13"
     },
     {
       "position": 137,
-      "rider": "Mattéo Vercher",
-      "team": "Team TotalEnergies",
-      "time": "+ 01:13.57"
+      "rider": "Elmar Reinders",
+      "team": "Team Jayco-AlUla",
+      "time": "+ 04:36.47"
     },
     {
       "position": 138,
-      "rider": "Jarrad Drizners",
+      "rider": "Arnaud De Lie",
       "team": "Lotto",
-      "time": "+ 01:13.05"
+      "time": "+ 04:37.19"
     },
     {
       "position": 139,
-      "rider": "Lewis Askey",
-      "team": "Groupama-FDJ",
-      "time": "+ 01:11.23"
+      "rider": "Laurenz Rex",
+      "team": "Intermarché-Wanty",
+      "time": "+ 04:37.57"
     },
     {
       "position": 140,
-      "rider": "Arnaud De Lie",
-      "team": "Lotto",
-      "time": "+ 01:11.10"
+      "rider": "Hugo Page",
+      "team": "Intermarché-Wanty",
+      "time": "+ 04:38.54"
     },
     {
       "position": 141,
-      "rider": "Elmar Reinders",
-      "team": "Team Jayco-AlUla",
-      "time": "+ 01:10.15"
+      "rider": "Vito Braet",
+      "team": "Intermarché-Wanty",
+      "time": "+ 04:40.45"
     },
     {
       "position": 142,
-      "rider": "Laurenz Rex",
-      "team": "Intermarché-Wanty",
-      "time": "+ 01:08.03"
+      "rider": "Stian Fredheim",
+      "team": "Uno-X Mobility",
+      "time": "+ 04:41.54"
     },
     {
       "position": 143,
-      "rider": "Hugo Page",
-      "team": "Intermarché-Wanty",
-      "time": "+ 01:07.35"
+      "rider": "Sébastien Grignard",
+      "team": "Lotto",
+      "time": "+ 04:42.18"
     },
     {
       "position": 144,
-      "rider": "Vito Braet",
-      "team": "Intermarché-Wanty",
-      "time": "+ 01:05.31"
+      "rider": "Alexis Renard",
+      "team": "Cofidis",
+      "time": "+ 04:43.17"
     },
     {
       "position": 145,
-      "rider": "Stian Fredheim",
-      "team": "Uno-X Mobility",
-      "time": "+ 01:05.24"
+      "rider": "Jonathan Milan",
+      "team": "Lidl-Trek",
+      "time": "+ 04:44.16"
     },
     {
       "position": 146,
-      "rider": "Sébastien Grignard",
-      "team": "Lotto",
-      "time": "+ 01:04.50"
+      "rider": "Bert Van Lerberghe",
+      "team": "Soudal Quick-Step",
+      "time": "+ 04:45.13"
     },
     {
       "position": 147,
-      "rider": "Alexis Renard",
-      "team": "Cofidis",
-      "time": "+ 01:04.33"
+      "rider": "Tim Merlier",
+      "team": "Soudal Quick-Step",
+      "time": "+ 04:45.34"
     },
     {
       "position": 148,
-      "rider": "Jonathan Milan",
-      "team": "Lidl-Trek",
-      "time": "+ 01:03.08"
+      "rider": "Guillaume Boivin",
+      "team": "Israel-Premier Tech",
+      "time": "+ 04:46.08"
     },
     {
       "position": 149,
       "rider": "Dylan Groenewegen",
       "team": "Team Jayco-AlUla",
-      "time": "+ 01:02.17"
+      "time": "+ 04:46.21"
     },
     {
       "position": 150,
-      "rider": "Bert Van Lerberghe",
-      "team": "Soudal Quick-Step",
-      "time": "+ 01:02.08"
+      "rider": "Phil Bauhaus",
+      "team": "Bahrain Victorious",
+      "time": "+ 04:48.10"
     },
     {
       "position": 151,
-      "rider": "Tim Merlier",
-      "team": "Soudal Quick-Step",
-      "time": "+ 01:01.50"
+      "rider": "Luka Mezgec",
+      "team": "Team Jayco-AlUla",
+      "time": "+ 04:48.49"
     },
     {
       "position": 152,
-      "rider": "Guillaume Boivin",
-      "team": "Israel-Premier Tech",
-      "time": "+ 01:01.16"
+      "rider": "Arnaud Démare",
+      "team": "ARKEA-B&B HOTELS",
+      "time": "+ 04:49.16"
     },
     {
       "position": 153,
-      "rider": "Luka Mezgec",
-      "team": "Team Jayco-AlUla",
-      "time": "+ 59.35"
+      "rider": "Benjamin Thomas",
+      "team": "Cofidis",
+      "time": "+ 04:50.06"
     },
     {
       "position": 154,
-      "rider": "Phil Bauhaus",
-      "team": "Bahrain Victorious",
-      "time": "+ 59.30"
+      "rider": "Davide Ballerini",
+      "team": "XDS Astana Team",
+      "time": "+ 04:50.43"
     },
     {
       "position": 155,
-      "rider": "Arnaud Démare",
-      "team": "ARKEA-B&B HOTELS",
-      "time": "+ 58.08"
+      "rider": "Kamil Gradek",
+      "team": "Bahrain Victorious",
+      "time": "+ 04:51.50"
     },
     {
       "position": 156,
-      "rider": "Benjamin Thomas",
-      "team": "Cofidis",
-      "time": "+ 57.44"
+      "rider": "Roel van Sintmaartensdijk",
+      "team": "Intermarché-Wanty",
+      "time": "+ 04:52.52"
     },
     {
       "position": 157,
-      "rider": "Davide Ballerini",
+      "rider": "Yevgeniy Fedorov",
       "team": "XDS Astana Team",
-      "time": "+ 56.41"
+      "time": "+ 04:52.57"
     },
     {
       "position": 158,
-      "rider": "Kamil Gradek",
-      "team": "Bahrain Victorious",
-      "time": "+ 55.28"
+      "rider": "Fabian Lienhard",
+      "team": "Tudor Pro Cycling Team",
+      "time": "+ 04:54.24"
     },
     {
       "position": 159,
       "rider": "Edward Theuns",
       "team": "Lidl-Trek",
-      "time": "+ 53.53"
+      "time": "+ 04:57.36"
     },
     {
       "position": 160,
-      "rider": "Yevgeniy Fedorov",
-      "team": "XDS Astana Team",
-      "time": "+ 53.19"
+      "rider": "Simone Consonni",
+      "team": "Lidl-Trek",
+      "time": "+ 04:58.43"
     },
     {
       "position": 161,
-      "rider": "Roel van Sintmaartensdijk",
-      "team": "Intermarché-Wanty",
-      "time": "+ 53.08"
-    },
-    {
-      "position": 162,
-      "rider": "Fabian Lienhard",
-      "team": "Tudor Pro Cycling Team",
-      "time": "+ 52.30"
-    },
-    {
-      "position": 163,
-      "rider": "Simone Consonni",
-      "team": "Lidl-Trek",
-      "time": "+ 50.31"
-    },
-    {
-      "position": 164,
       "rider": "Jordi Meeus",
       "team": "Red Bull-BORA-hansgrohe",
-      "time": "+ 48.43"
+      "time": "+ 04:59.48"
     }
   ],
   "abandoned_riders": [
-    {
-      "rider": "Danny van Poppel",
-      "team": "Red Bull-BORA-hansgrohe",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Emilien Jeannière",
-      "team": "Team TotalEnergies",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Mattia Cattaneo",
-      "team": "Soudal Quick-Step",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Mathieu van der Poel",
-      "team": "Alpecin-Deceuninck",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Stefan Bissegger",
-      "team": "Decathlon AG2R La Mondiale Team",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Georg Zimmermann",
-      "team": "Intermarché-Wanty",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Remco Evenepoel",
-      "team": "Soudal Quick-Step",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Marijn van den Berg",
-      "team": "EF Education-EasyPost",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Jasper Philipsen",
-      "team": "Alpecin-Deceuninck",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Jack Haig",
-      "team": "Bahrain Victorious",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Filippo Ganna",
-      "team": "INEOS Grenadiers",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
-    {
-      "rider": "Jasper De Buyst",
-      "team": "Lotto",
-      "stage": "Unknown",
-      "reason": "Abandoned"
-    },
     {
       "rider": "Joao Almeida",
       "team": "UAE Team Emirates-XRG",
@@ -1098,9 +1020,99 @@
       "team": "XDS Astana Team",
       "stage": "Unknown",
       "reason": "Abandoned"
+    },
+    {
+      "rider": "Danny van Poppel",
+      "team": "Red Bull-BORA-hansgrohe",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Emilien Jeannière",
+      "team": "Team TotalEnergies",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Mattia Cattaneo",
+      "team": "Soudal Quick-Step",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Enric Mas",
+      "team": "Movistar Team",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Mathieu van der Poel",
+      "team": "Alpecin-Deceuninck",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Stefan Bissegger",
+      "team": "Decathlon AG2R La Mondiale Team",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Cyril Barthe",
+      "team": "Groupama-FDJ",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Georg Zimmermann",
+      "team": "Intermarché-Wanty",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Carlos Rodriguez",
+      "team": "INEOS Grenadiers",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Remco Evenepoel",
+      "team": "Soudal Quick-Step",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Marijn van den Berg",
+      "team": "EF Education-EasyPost",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Jasper Philipsen",
+      "team": "Alpecin-Deceuninck",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Filippo Ganna",
+      "team": "INEOS Grenadiers",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Jack Haig",
+      "team": "Bahrain Victorious",
+      "stage": "Unknown",
+      "reason": "Abandoned"
+    },
+    {
+      "rider": "Jasper De Buyst",
+      "team": "Lotto",
+      "stage": "Unknown",
+      "reason": "Abandoned"
     }
   ],
-  "last_updated": "2025-07-24T17:14:57.303Z",
+  "last_updated": "2025-07-24T18:05:09.010Z",
   "source": "Domestique Cycling",
   "data_structure_version": "1.0"
 }
